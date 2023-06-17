@@ -6,7 +6,9 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 1. Zhou, Yu, et al. [Graph neural networks: Taxonomy, advances, and trends.](https://dl.acm.org/doi/full/10.1145/3495161?casa_token=wnutK67-_XQAAAAA:lMyEyQ2PckAAPoQX5V3hfF6lyxFoLjLhFjEH387d8ukre5fAn2w0pBLjREG4yqd2QEtD9Xd_VsMl76o) ACM Transactions on Intelligent Systems and Technology (TIST) 13.1 (2022): 1-54.
 
+2. Liao, Renjie. [Deep Learning on Graphs: Theory, Models, Algorithms and Applications.](https://dam-oclc.bac-lac.gc.ca/download?is_thesis=1&oclc_number=1334506861&id=353a2bc9-9702-4aff-96e6-419d14993f74&fileName=Liao_Renjie_202106_PhD_thesis.pdf) University of Toronto (Canada), 2021.
 
+3. Ritzert, Martin. [Learning on graphs with logic and neural networks.](https://publications.rwth-aachen.de/record/833937/files/833937.pdf) Diss. Dissertation, RWTH Aachen University, 2021, 2021.
 
 ### Expressive Power of Graph Neural Networks (WL-test)
 
@@ -33,7 +35,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
-From my observation, travel salesman problem is the most researhed topicm then SAT, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
+From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
 
 1. Prates, Marcelo, et al. [Learning to solve np-complete problems: A graph neural network for decision tsp.](https://arxiv.org/pdf/1809.02721.pdf) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. No. 01. 2019.
 
@@ -85,7 +87,33 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 24. Liu, Minghao, et al. [Can Graph Neural Networks Learn to Solve MaxSAT Problem?.](https://arxiv.org/pdf/2111.07568) arXiv preprint arXiv:2111.07568 (2021).
 
-25. 
+25. Grötschla, Florian, Joël Mathys, and Roger Wattenhofer. [Learning Graph Algorithms With Recurrent Graph Neural Networks.](https://arxiv.org/pdf/2212.04934) arXiv preprint arXiv:2212.04934 (2022).
+
+26. Glorot, Xavier, et al. [Learning representations of logical formulae using graph neural networks.](https://grlearning.github.io/papers/58.pdf) Neural Information Processing Systems, Workshop on Graph Representation Learning. 2019.
+
+27. Saveri, Gaia, and Luca Bortolussi. [Graph Neural Networks for Propositional Model Counting.](https://arxiv.org/pdf/2205.04423) arXiv preprint arXiv:2205.04423 (2022).
+
+28. Zhang, Congsong, Yong Gao, and James Nastos. [Learning Branching Heuristics from Graph Neural Networks.](https://arxiv.org/pdf/2211.14405) arXiv preprint arXiv:2211.14405 (2022).
+
+29. Sun, Changzhi, et al. [Probabilistic graph reasoning for natural proof generation.](https://arxiv.org/pdf/2107.02418) arXiv preprint arXiv:2107.02418 (2021).
+
+30. Chen, Ziliang, and Zhanfu Yang. [Graph neural reasoning may fail in certifying boolean unsatisfiability.](https://arxiv.org/pdf/1909.11588) arXiv preprint arXiv:1909.11588 (2019).
+
+31. Yan, Zhiyuan, et al. [Addressing Variable Dependency in GNN-based SAT Solving.](https://arxiv.org/pdf/2304.08738) arXiv preprint arXiv:2304.08738 (2023).
+
+32. Mukherjee, Prasita, and Tiark Rompf. [A GNN Based Approach to LTL Model Checking.](https://arxiv.org/pdf/2110.14824) arXiv preprint arXiv:2110.14824 (2021).
+
+33. Xu, Feifan, et al. [Fast OBDD reordering using neural message passing on hypergraph.](https://arxiv.org/pdf/1811.02178) arXiv preprint arXiv:1811.02178 (2018).
+
+34. Malmqvist, Lars. [Approximate Solutions to Abstract Argumentation Problems Using Graph Neural Networks.](https://etheses.whiterose.ac.uk/32152/6/thesis.pdf) Diss. University of York, 2022.
+
+35. Hagström, Fredrik, and Fredrik Hagström. [Finding Solutions to the Vehicle Routing Problem using a Graph Neural Network.](https://sal.aalto.fi/publications/pdf-files/theses/bac/thag22_public.pdf) (2022).
+
+36. Ghose, Amur, Amit Levi, and Yingxue Zhang. [Graph neural networks for Ramsey graphs.](https://mathai2022.github.io/papers/18.pdf)
+
+37. Hula, Jan, David Mojzıšek, and Mikoláš Janota. [Towards Graph Neural Networks for SMT Portfolios.](http://aitp-conference.org/2021/abstract/paper_27.pdf)
+
+38. Amizadeh, Saeed, Sergiy Matusevych, and Markus Weimer. [PDP: A General Neural Framework for Learning SAT Solvers.](https://openreview.net/pdf?id=S1xaf6VFPB)
 
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
 
@@ -152,3 +180,8 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 
 ### Astronomy
+
+
+### Social Networks
+
+1. Li, Yandi, et al. [A Survey on Influence Maximization: From an ML-Based Combinatorial Optimization.](https://arxiv.org/pdf/2211.03074) arXiv preprint arXiv:2211.03074 (2022).
