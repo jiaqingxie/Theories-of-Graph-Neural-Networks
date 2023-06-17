@@ -323,11 +323,36 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 39. Wu, Tailin, et al. [Learning Controllable Adaptive Simulation for Multi-scale Physics.](https://openreview.net/pdf?id=PhktEpJHU3) NeurIPS 2022 AI for Science: Progress and Promises.
 
-### Group Theories
 
 
-### Theoretical GeoSciences, Geology, and Seismology
+### GeoSciences, Geology, and Seismology
+1. Hillier, Michael, et al. [Three-dimensional structural geological modeling using graph neural networks.](https://link.springer.com/article/10.1007/s11004-021-09945-x) Mathematical Geosciences 53.8 (2021): 1725-1749.
 
+2. Kuang, Ping, et al. [Landslide Displacement Prediction via Attentive Graph Neural Network.](https://www.mdpi.com/2072-4292/14/8/1919/pdf) Remote Sensing 14.8 (2022): 1919.
+
+3. Sun, Alexander Y., et al. [Explore Spatio‐Temporal Learning of Large Sample Hydrology Using Graph Neural Networks.](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021WR030394?casa_token=6p2Of4MKudwAAAAA:TzXaJlt500xkSi_pEgAoBKl2ZU-_3S3MAquL8N-HBy_ChoO7544cbV2XEDp7WDo7nkw1cz_Vg-e0Uy6E8A) Water Resources Research 57.12 (2021): e2021WR030394.
+
+4. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake phase association with graph neural networks.](https://pubs.geoscienceworld.org/ssa/bssa/article-pdf/doi/10.1785/0120220182/5764196/bssa-2022182.1.pdf?casa_token=DXulqT6Kr_QAAAAA:uiQ_xIur_9-0kXvK6Ds8zM_bJl2jxu7w81UxJkqXozPVR-fo1di7e17jFwFb8khYSMssXtyS) Bulletin of the Seismological Society of America 113.2 (2023): 524-547.
+
+5. Gong, Renbin, and Yanzi Yang. [Application of Graph Neural Network in Lithology Recognition.](https://ieeexplore.ieee.org/iel7/9885795/9885816/09885832.pdf?casa_token=t7J0StbmeoYAAAAA:Ql0m0LyU0amMEF34lQBlOLFlfJ9XvjQUNwFu2QdVObH9oArWGRb2Rk_cdMgAFbKg0agt3fX5otlQ) 2022 4th International Conference on Natural Language Processing (ICNLP). IEEE, 2022.
+
+6. Zhou, Fan, et al. [Land deformation prediction via slope-aware graph neural networks.](https://ojs.aaai.org/index.php/AAAI/article/download/17764/17571) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 17. 2021.
+
+7. Li, Rongfan, et al. [Mining Spatio-Temporal Relations via Self-Paced Graph Contrastive Learning.](https://dl.acm.org/doi/pdf/10.1145/3534678.3539422?casa_token=Ijq0k6zsBR4AAAAA:k6rzhXZpbEUy6oA6J16oc5lSeDram8OpuAXyvm9WNHqA4bAJP-gr74Er7VLqlVggpaIXOJT_XX01OAI) Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2022.
+
+8. Li, Yun, et al. [Graph Neural Network for spatiotemporal data: methods and applications.](https://arxiv.org/pdf/2306.00012) arXiv preprint arXiv:2306.00012 (2023).
+
+9. Choi, Yongjin, and Krishna Kumar. [Graph Neural Network-based surrogate model for granular flows.](https://arxiv.org/pdf/2305.05218) arXiv preprint arXiv:2305.05218 (2023).
+
+10. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake location and magnitude estimation with graph neural networks.](https://ieeexplore.ieee.org/iel7/9897158/9897159/09897468.pdf?casa_token=lU6Q78jvbYgAAAAA:6QYpeORN5EtHhQVbXODzCkpoT4pkO73KDCAffk0jA2wpvmxit1XfYtM58O72bd8Tua0U8ItsbEHz) 2022 IEEE International Conference on Image Processing (ICIP). IEEE, 2022.
+
+11. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake phase association with graph neural networks.](https://pubs.geoscienceworld.org/ssa/bssa/article-pdf/doi/10.1785/0120220182/5764196/bssa-2022182.1.pdf?casa_token=aVlcJVz6ZU8AAAAA:p8nz1kBfoOH1_5BYty7uFaxz0pmVatR-75DGmHkUxpGkp-LIAblEyARWAQxnk1fcVCvLIrH3) Bulletin of the Seismological Society of America 113.2 (2023): 524-547.
+
+12. Bloemheuvel, Stefan, et al. [Multivariate time series regression with graph neural networks.](https://arxiv.org/pdf/2201.00818) arXiv preprint arXiv:2201.00818 (2022).
+
+13. Bilal, Muhammad Atif, et al. [Early Earthquake Detection Using Batch Normalization Graph Convolutional Neural Network (BNGCNN).](https://www.mdpi.com/2076-3417/12/15/7548/pdf) Applied Sciences 12.15 (2022): 7548.
+
+14. Ruiz, Luana, Fernando Gama, and Alejandro Ribeiro. [Gated graph convolutional recurrent neural networks.](https://ieeexplore.ieee.org/iel7/8893974/8902336/08902995.pdf?casa_token=9a1aPY5i1qwAAAAA:kN2eCqQTZxcFHbVRvzNVsqXmSbu6OGpEDlIuGYyLbDO_xz3dR7ua0rDf8NXjplHNVdDPjHxUEkqr) 2019 27th European Signal Processing Conference (EUSIPCO). IEEE, 2019.
 
 ### Astronomy
 
