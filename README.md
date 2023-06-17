@@ -56,6 +56,8 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 11. Panagopoulos, George, et al. [Learning Graph Representations for Influence Maximization.](https://arxiv.org/pdf/2108.04623.pdf) arXiv preprint arXiv:2108.04623 (2021).
 
+12. Lamb, Luis C., et al. [Graph neural networks meet neural-symbolic computing: A survey and perspective.](https://arxiv.org/pdf/2003.00330.pdf) arXiv preprint arXiv:2003.00330 (2020).
+
 
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
 
@@ -83,6 +85,14 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 12. Li, Zhuwen, Qifeng Chen, and Vladlen Koltun. [Combinatorial optimization with graph convolutional networks and guided tree search.](https://proceedings.neurips.cc/paper/2018/file/8d3bba7425e7c98c50f52ca1b52d3735-Paper.pdf) Advances in neural information processing systems 31 (2018).
 
+13. Gasse, Maxime, et al. [Exact combinatorial optimization with graph convolutional neural networks.](https://proceedings.neurips.cc/paper/2019/file/d14c2267d848abeb81fd590f371d39bd-Paper.pdf) Advances in neural information processing systems 32 (2019).
+
+14. Vesselinova, Natalia, et al. [Learning combinatorial optimization on graphs: A survey with applications to networking.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9125934) IEEE Access 8 (2020): 120388-120416.
+
+15. 
+
+
+
 
 
 
@@ -94,7 +104,6 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 ### Theoretical Biochemistry
 
-1. Strokach, Alexey, et al. [Fast and flexible design of novel proteins using graph neural networks.](https://www.biorxiv.org/content/biorxiv/early/2020/03/14/868935.full.pdf) BioRxiv (2019): 868935.
 
 ### Partial / Ordinary Differential Equations
 
