@@ -26,7 +26,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 3. Sahbi, Hichem. [Lightweight Graph Convolutional Networks with Topologically Consistent Magnitude Pruning.](https://arxiv.org/pdf/2203.13616.pdf) arXiv preprint arXiv:2203.13616 (2022).
 
-4. 
+4. Feng, Fan, et al. [Community Channel-Net: Efficient channel-wise interactions via community graph topology.](https://www.sciencedirect.com/science/article/pii/S0031320323002364?casa_token=e_u4pwTRWtEAAAAA:7ndobj_IlridjrTekVfb8dCSTutommVNWdyrQ5lowg6WHVj7U-sy4GIOqh7PkvoAVMzboBJ2xYqO) Pattern Recognition 141 (2023): 109536.
 
 
 
@@ -168,6 +168,8 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 ### Particle Physics
 
+1. Hao, Zhongkai, et al. [Physics-Informed Machine Learning: A Survey on Problems, Methods and Applications.](https://arxiv.org/pdf/2211.08064) arXiv preprint arXiv:2211.08064 (2022).
+
 
 ### Theoretical Biochemistry
 1. Gilmer, Justin, et al. [Neural message passing for quantum chemistry.](http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf) International conference on machine learning. PMLR, 2017.
@@ -206,7 +208,7 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 16. Hua, Chuanbo, et al. [Efficient Continuous Spatio-Temporal Simulation with Graph Spline Networks.](https://openreview.net/pdf?id=PBT0Vftuji) ICML 2022 2nd AI for Science Workshop.
 
-17. Di Giovanni, Francesco. [Graph neural networks as dynamical systems.](https://www.sci.unich.it/geodeep2022/slides/GRAFF_presentation%20(17).pdf)\
+17. Di Giovanni, Francesco. [Graph neural networks as dynamical systems.](https://www.sci.unich.it/geodeep2022/slides/GRAFF_presentation%20(17).pdf) 
 
 18. Pal, Soumyasundar. [Monte Carlo algorithms for nonlinear filtering, bayesian graph neural networks, and probabilistic forecasting.](https://escholarship.mcgill.ca/downloads/rv0430529) (2022).
 
@@ -215,22 +217,35 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 20. Qin, Tiexin, et al. [Learning Dynamic Graph Embeddings with Neural Controlled Differential Equations.](https://arxiv.org/pdf/2302.11354) arXiv preprint arXiv:2302.11354 (2023).
 
-21. 
+21. Takamoto, Makoto, et al. [PDEBench: An extensive benchmark for scientific machine learning](https://proceedings.neurips.cc/paper_files/paper/2022/file/0a9747136d411fb83f0cf81820d44afb-Paper-Datasets_and_Benchmarks.pdf) Advances in Neural Information Processing Systems 35 (2022): 1596-1611.
 
+22. Sanchez-Gonzalez, Alvaro, et al. [Hamiltonian graph networks with ode integrators.](https://arxiv.org/pdf/1909.12790) arXiv preprint arXiv:1909.12790 (2019). 
 
-22. 
+23. Ruhe, David, et al. [Geometric clifford algebra networks.](https://arxiv.org/pdf/2302.06594) arXiv preprint arXiv:2302.06594 (2023).
 
-23. 
+24. Wu, Tailin, Takashi Maruyama, and Jure Leskovec. [Learning to accelerate partial differential equations via latent global evolution.](https://arxiv.org/pdf/2206.07681) arXiv preprint arXiv:2206.07681 (2022).
 
-24. 
+25. Lütjens, Björn, et al. [Multiscale neural operator: Learning fast and grid-independent pde solvers.](https://arxiv.org/pdf/2207.11417) arXiv preprint arXiv:2207.11417 (2022).
 
-25. 
+26. Horie, Masanobu, and Naoto Mitsume. [Physics-Embedded Neural Networks: Graph Neural PDE Solvers with Mixed Boundary Conditions.](https://proceedings.neurips.cc/paper_files/paper/2022/file/93476ae409ae3246e22a9d4b931f84ed-Paper-Conference.pdf) Advances in Neural Information Processing Systems 35 (2022): 23218-23229.
 
-26. 
+27. Equer, Léonard, T. Konstantin Rusch, and Siddhartha Mishra. [Multi-scale message passing neural pde solvers.](https://arxiv.org/pdf/2302.03580) arXiv preprint arXiv:2302.03580 (2023).
 
-27. 
+28. Lötzsch, Winfried, Simon Ohler, and Johannes S. Otterbach. [Learning the solution operator of boundary value problems using graph neural networks.](https://arxiv.org/pdf/2206.14092) arXiv preprint arXiv:2206.14092 (2022).
 
-28. 
+29. Wang, Yuelin, et al. [ACMP: Allen-Cahn Message Passing for Graph Neural Networks with Particle Phase Transition.](https://arxiv.org/pdf/2206.05437) arXiv preprint arXiv:2206.05437 (2022).
+
+30.  Horie, Masanobu, and Naoto Mitsume. [Physics-Embedded Neural Networks: $\boldsymbol {\mathrm {E}(n)} $-Equivariant Graph Neural PDE Solvers.](https://arxiv.org/pdf/2205.11912) arXiv preprint arXiv:2205.11912 (2022).
+
+31. Toshev, Artur P., et al. [Learning Lagrangian Fluid Mechanics with E ($3 $)-Equivariant Graph Neural Networks.](https://arxiv.org/pdf/2305.15603) arXiv preprint arXiv:2305.15603 (2023).
+
+32. Serrano, Louis, et al. [Operator Learning with Neural Fields: Tackling PDEs on General Geometries.](https://arxiv.org/pdf/2306.07266) arXiv preprint arXiv:2306.07266 (2023).
+
+33. Huang, Xinquan, et al. [NeuralStagger: accelerating physics-constrained neural PDE solver with spatial-temporal decomposition.](https://arxiv.org/pdf/2302.10255) arXiv preprint arXiv:2302.10255 (2023).
+
+34. 
+
+35. 
 
 ### Group Theories
 
