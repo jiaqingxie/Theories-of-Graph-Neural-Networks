@@ -17,6 +17,9 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 ### Expressive Power of Graph Neural Networks (WL-test, Equivariance, Invariance)
 
+1. Souza, Amauri, et al. [Provably expressive temporal graph networks.](https://proceedings.neurips.cc/paper_files/paper/2022/file/d029c97ee0db162c60f2ebc9cb93387e-Paper-Conference.pdf) Advances in Neural Information Processing Systems 35 (2022): 32257-32269.
+
+2. 
 
 ### Geometric Graph Neural Networks, Topology (Lie Group)
 
@@ -117,6 +120,8 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 39. de Aquino Afonso, Bruno Klaus, et al. [Kdd-br 2021: Using graph neural networks for link prediction in tsp problem.](https://sol.sbc.org.br/index.php/eniac/article/download/18426/18259/) Anais do XVIII Encontro Nacional de Inteligência Artificial e Computacional. SBC, 2021.
 
+40. Hudson, Benjamin, et al. [Graph neural network guided local search for the traveling salesperson problem.](https://arxiv.org/pdf/2110.05291) arXiv preprint arXiv:2110.05291 (2021).
+
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
 
 1. Cappart, Quentin, et al. [Combinatorial optimization and reasoning with graph neural networks.](https://arxiv.org/pdf/2102.09544.pdf) arXiv preprint arXiv:2102.09544 (2021).
@@ -160,6 +165,11 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 20. Khalil, Elias, et al. [Learning combinatorial optimization algorithms over graphs.](https://proceedings.neurips.cc/paper/2017/file/d9896106ca98d3d05b8cbdf4fd8b13a1-Paper.pdf) Advances in neural information processing systems 30 (2017).
 
+21. Schuetz, Martin JA, J. Kyle Brubaker, and Helmut G. Katzgraber. [Combinatorial optimization with physics-inspired graph neural networks.](https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s42256-022-00468-6&casa_token=zl7d4n7kUvwAAAAA:dSRgWyzdym4z_LMavvGfjdpoGZqhRd4FRtsNKV-uSz7DIlcgFofAY4GHLnIGIxLPOEpGAgMYe2-nup3AuBI) Nature Machine Intelligence 4.4 (2022): 367-377.
+
+
+22. 
+
 
 
 
@@ -167,9 +177,67 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 
 ### Particle Physics
+Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-LivingReview/).
 
 1. Hao, Zhongkai, et al. [Physics-Informed Machine Learning: A Survey on Problems, Methods and Applications.](https://arxiv.org/pdf/2211.08064) arXiv preprint arXiv:2211.08064 (2022).
 
+2. Henrion, Isaac, et al. [Neural message passing for jet physics.](https://orbi.uliege.be/bitstream/2268/226446/1/nips_dlps_2017_29.pdf) (2017).
+
+3. Ju, Xiangyang, et al. [Graph neural networks for particle reconstruction in high energy physics detectors.](https://arxiv.org/pdf/2003.11603) arXiv preprint arXiv:2003.11603 (2020).
+
+4. Abdughani, Murat, et al. [Probing stop pair production at the LHC with graph neural networks.](https://link.springer.com/content/pdf/10.1007/JHEP08(2019)055.pdf) Journal of High Energy Physics 2019.8 (2019): 1-14.
+
+5. Martínez, J. Arjona, et al. [Pileup mitigation at the Large Hadron Collider with graph neural networks.](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/content/pdf/10.1140/epjp/i2019-12710-3.pdf&casa_token=SP8PSdhh_CoAAAAA:HtQpQGe2oMSc4nwt0Y-l0KN1rR2p1X1cD-DKcQtHli8sZ6qoApfz6A_F86Bj0CTDd3IEglaaZMxi8CzJSQY) The European Physical Journal Plus 134.7 (2019): 333.
+
+6. Ren, Jie, Lei Wu, and Jin Min Yang. [Unveiling CP property of top-Higgs coupling with graph neural networks at the LHC.](https://www.sciencedirect.com/science/article/pii/S0370269320300022) Physics Letters B 802 (2020): 135198.
+
+7. Moreno, Eric A., et al. [JEDI-net: a jet identification algorithm based on interaction networks.](https://link.springer.com/article/10.1140/epjc/s10052-020-7608-4) The European Physical Journal C 80 (2020): 1-15.
+
+8. Qasim, Shah Rukh, et al. [Learning representations of irregular particle-detector geometry with distance-weighted graph networks.](https://link.springer.com/article/10.1140/epjc/s10052-019-7113-9) The European Physical Journal C 79.7 (2019): 1-11.
+
+9. Chakraborty, Amit, et al. [Neural network-based top tagger with two-point energy correlations and geometry of soft emissions.](https://link.springer.com/article/10.1007/JHEP07(2020)111) Journal of High Energy Physics 2020.7 (2020): 1-47.
+
+10.  Abdughani, Murat, et al. [Probing the triple Higgs boson coupling with machine learning at the LHC.](https://link.aps.org/pdf/10.1103/PhysRevD.104.056003) Physical Review D 104.5 (2021): 056003.
+
+11. Bernreuther, Elias, et al. [Casting a graph net to catch dark showers.](https://www.scipost.org/SciPostPhys.10.2.046/pdf) SciPost Physics 10.2 (2021): 046.
+
+12. Shlomi, Jonathan, Peter Battaglia, and Jean-Roch Vlimant. [Graph neural networks in particle physics.](https://iopscience.iop.org/article/10.1088/2632-2153/abbf9a/pdf) Machine Learning: Science and Technology 2.2 (2020): 021001.
+
+13. Iiyama, Yutaro, et al. [Distance-weighted graph neural networks on FPGAs for real-time particle reconstruction in high energy physics.](https://www.frontiersin.org/articles/10.3389/fdata.2020.598927/full) Frontiers in big Data 3 (2021): 598927.
+
+14. Choma, Nicholas, et al. [Track seeding and labelling with embedded-space graph neural networks.](https://arxiv.org/pdf/2007.00149) arXiv preprint arXiv:2007.00149 (2020).
+
+15. Guo, Jun, et al. [Boosted Higgs boson jet reconstruction via a graph neural network.](https://link.aps.org/pdf/10.1103/PhysRevD.103.116025) Physical Review D 103.11 (2021): 116025.
+
+16. Verma, Yogesh, and Satyajit Jena. [Particle Track Reconstruction using Geometric Deep Learning.](https://arxiv.org/pdf/2012.08515) arXiv preprint arXiv:2012.08515 (2020).
+
+17. Qian, Zhen, et al. [Vertex and energy reconstruction in JUNO with machine learning methods.](https://www.sciencedirect.com/science/article/pii/S016890022100512X?casa_token=iSHJwPiNg-QAAAAA:jkHR6CB7WxQ7ZuLN7TC7AYRIz_V1jM3Dy_-zwVaRuo9u_p2hPQv2BIkOvZXngWGF3Rhu5dRnPjlo) Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 1010 (2021): 165527.
+
+18. Pata, Joosep, et al. [MLPF: efficient machine-learned particle-flow reconstruction using graph neural networks.](https://link.springer.com/article/10.1140/epjc/s10052-021-09158-w) The European Physical Journal C 81 (2021): 1-14.
+
+19. Biscarat, Catherine, et al. [Towards a realistic track reconstruction algorithm based on graph neural networks for the HL-LHC.](https://www.epj-conferences.org/articles/epjconf/pdf/2021/05/epjconf_chep2021_03047.pdf) EPJ Web of Conferences. Vol. 251. EDP Sciences, 2021.
+
+20. Thais, Savannah, and Gage DeZoort. [Instance Segmentation Gnns for One-Shot Conformal Tracking at the LHC.](https://arxiv.org/pdf/2103.06509) arXiv preprint arXiv:2103.06509 (2021).
+
+21. Verma, Yogesh, and Satyajit Jena. [Jet characterization in Heavy Ion Collisions by QCD-Aware Graph Neural Networks.](https://arxiv.org/pdf/2103.14906) arXiv preprint arXiv:2103.14906 (2021).
+
+22. Hariri, Ali, Darya Dyachkova, and Sergei Gleyzer. [Graph generative models for fast detector simulations in high energy physics.](https://arxiv.org/pdf/2104.01725) arXiv preprint arXiv:2104.01725 (2021).
+
+23. Konar, Partha, Vishal S. Ngairangbam, and Michael Spannowsky. [Energy-weighted message passing: an infra-red and collinear safe graph neural network algorithm.](https://link.springer.com/content/pdf/10.1007/JHEP02(2022)060.pdf) Journal of High Energy Physics 2022.2 (2022): 1-30.
+
+24. Tsan, Steven, et al. [Particle Graph Autoencoders and Differentiable, Learned Energy Mover's Distance.](https://arxiv.org/pdf/2111.12849) arXiv preprint arXiv:2111.12849 (2021).
+
+25. Gong, Shiqi, et al. [An efficient Lorentz equivariant graph neural network for jet tagging.](https://link.springer.com/content/pdf/10.1007/JHEP07(2022)030.pdf) Journal of High Energy Physics 2022.7 (2022): 1-22.
+
+26. Qasim, Shah Rukh, et al. [End-to-end multi-particle reconstruction in high occupancy imaging calorimeters with graph neural networks.](https://link.springer.com/article/10.1140/epjc/s10052-022-10665-7) The European Physical Journal C 82.8 (2022): 753.
+
+27. Ma, Fei, Feiyi Liu, and Wei Li. [A jet tagging algorithm of graph network with HaarPooling message passing.](https://arxiv.org/pdf/2210.13869) arXiv preprint arXiv:2210.13869 (2022).
+
+28. Bogatskiy, Alexander, et al. [PELICAN: Permutation Equivariant and Lorentz Invariant or Covariant Aggregator Network for Particle Physics.](https://arxiv.org/pdf/2211.00454) arXiv preprint arXiv:2211.00454 (2022).
+
+29. Di Bello, Francesco Armando, et al. [Reconstructing particles in jets using set transformer and hypergraph prediction networks.](https://arxiv.org/pdf/2212.01328) arXiv preprint arXiv:2212.01328 (2022).
+
+30. Ehrke, Lukas, et al. [Topological Reconstruction of Particle Physics Processes using Graph Neural Networks.](https://arxiv.org/pdf/2303.13937) arXiv preprint arXiv:2303.13937 (2023).
 
 ### Theoretical Biochemistry
 1. Gilmer, Justin, et al. [Neural message passing for quantum chemistry.](http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf) International conference on machine learning. PMLR, 2017.
@@ -267,3 +335,7 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 ### Social Networks
 
 1. Li, Yandi, et al. [A Survey on Influence Maximization: From an ML-Based Combinatorial Optimization.](https://arxiv.org/pdf/2211.03074) arXiv preprint arXiv:2211.03074 (2022).
+
+
+
+This repo is monthly updated. 
