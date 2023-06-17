@@ -194,13 +194,43 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 10. Baker, Justin, et al. [Proximal Implicit ODE Solvers for Accelerating Learning Neural ODEs.](https://arxiv.org/pdf/2204.08621) arXiv preprint arXiv:2204.08621 (2022).
 
-11.
+11. Elhag, Ahmed AA, et al. [Graph Anisotropic Diffusion.](https://arxiv.org/pdf/2205.00354) arXiv preprint arXiv:2205.00354 (2022).
+
+12. Qin, Yifang, et al. [Learning Graph ODE for Continuous-Time Sequential Recommendation.](https://arxiv.org/pdf/2304.07042) arXiv preprint arXiv:2304.07042 (2023).
+
+13. Nguyen, Khang, et al. [DeepGRAND: Deep Graph Neural Diffusion.](https://openreview.net/pdf?id=wTGORH_cHPX) (2023).
+
+14. Huang, Chuyu. [STR-GODEs: Spatial-Temporal-Ridership Graph ODEs for Metro Ridership Prediction.](https://arxiv.org/pdf/2107.04980) arXiv preprint arXiv:2107.04980 (2021).
+
+15. Xia, Hedi. [Towards Faster and More Accurate Neural ODEs](https://escholarship.org/content/qt1rn6x024/qt1rn6x024.pdf). Diss. University of California, Los Angeles, 2023.
+
+16. Hua, Chuanbo, et al. [Efficient Continuous Spatio-Temporal Simulation with Graph Spline Networks.](https://openreview.net/pdf?id=PBT0Vftuji) ICML 2022 2nd AI for Science Workshop.
+
+17. Di Giovanni, Francesco. [Graph neural networks as dynamical systems.](https://www.sci.unich.it/geodeep2022/slides/GRAFF_presentation%20(17).pdf)\
+
+18. Pal, Soumyasundar. [Monte Carlo algorithms for nonlinear filtering, bayesian graph neural networks, and probabilistic forecasting.](https://escholarship.mcgill.ca/downloads/rv0430529) (2022).
 
 
-12. 
+19. Brandstetter, Johannes, Daniel Worrall, and Max Welling. [Message passing neural PDE solvers.](https://arxiv.org/pdf/2202.03376) arXiv preprint arXiv:2202.03376 (2022).
+
+20. Qin, Tiexin, et al. [Learning Dynamic Graph Embeddings with Neural Controlled Differential Equations.](https://arxiv.org/pdf/2302.11354) arXiv preprint arXiv:2302.11354 (2023).
+
+21. 
 
 
-Brandstetter, Johannes, Daniel Worrall, and Max Welling. "Message passing neural PDE solvers." arXiv preprint arXiv:2202.03376 (2022).
+22. 
+
+23. 
+
+24. 
+
+25. 
+
+26. 
+
+27. 
+
+28. 
 
 ### Group Theories
 
