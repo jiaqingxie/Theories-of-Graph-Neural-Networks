@@ -79,6 +79,13 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 21. Tönshoff, Jan, et al. [One model, any CSP: Graph neural networks as fast global search heuristics for constraint satisfaction.](https://arxiv.org/pdf/2208.10227) arXiv preprint arXiv:2208.10227 (2022).
 
+22. Yang, Lei, and Lei Zou. [Noah: Neural-optimized A Search Algorithm for Graph Edit Distance Computation.](https://ieeexplore.ieee.org/iel7/9458599/9458600/09458863.pdf?casa_token=nwHBBJEdHXUAAAAA:IeLY-bojxj2mGYrWEVmb0gYxjKs-C4HMYQ19N2FWH-mpN09w9KzUZznWBbLqu6NQ_dDDeAmj3zO3) 2021 IEEE 37th International Conference on Data Engineering (ICDE). IEEE, 2021.
+
+23. Wang, Wenxi, et al. [NeuroComb: Improving SAT Solving with Graph Neural Networks.](https://arxiv.org/pdf/2110.14053) arXiv preprint arXiv:2110.14053 (2021).
+
+24. Liu, Minghao, et al. [Can Graph Neural Networks Learn to Solve MaxSAT Problem?.](https://arxiv.org/pdf/2111.07568) arXiv preprint arXiv:2111.07568 (2021).
+
+25. 
 
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
 
@@ -121,7 +128,8 @@ From my observation, travel salesman problem is the most researhed topicm then S
 19. Angelini, Maria Chiara, and Federico Ricci-Tersenghi. [Modern graph neural networks do worse than classical greedy algorithms in solving combinatorial optimization problems like maximum independent set.](https://www.nature.com/articles/s42256-022-00589-y) Nature Machine Intelligence 5.1 (2023): 29-31.
 
 
-20. 
+20. Khalil, Elias, et al. [Learning combinatorial optimization algorithms over graphs.](https://proceedings.neurips.cc/paper/2017/file/d9896106ca98d3d05b8cbdf4fd8b13a1-Paper.pdf) Advances in neural information processing systems 30 (2017).
+
 
 
 
