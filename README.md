@@ -4,6 +4,8 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 ### Some General Surveys
 
+1. Zhou, Yu, et al. [Graph neural networks: Taxonomy, advances, and trends.](https://dl.acm.org/doi/full/10.1145/3495161?casa_token=wnutK67-_XQAAAAA:lMyEyQ2PckAAPoQX5V3hfF6lyxFoLjLhFjEH387d8ukre5fAn2w0pBLjREG4yqd2QEtD9Xd_VsMl76o) ACM Transactions on Intelligent Systems and Technology (TIST) 13.1 (2022): 1-54.
+
 
 
 ### Expressive Power of Graph Neural Networks (WL-test)
@@ -31,7 +33,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
-From my observation, travel salesman problem is the most researhed topicm then SAT, CNF, DNF
+From my observation, travel salesman problem is the most researhed topicm then SAT, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
 
 1. Prates, Marcelo, et al. [Learning to solve np-complete problems: A graph neural network for decision tsp.](https://arxiv.org/pdf/1809.02721.pdf) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. No. 01. 2019.
 
@@ -57,6 +59,12 @@ From my observation, travel salesman problem is the most researhed topicm then S
 11. Panagopoulos, George, et al. [Learning Graph Representations for Influence Maximization.](https://arxiv.org/pdf/2108.04623.pdf) arXiv preprint arXiv:2108.04623 (2021).
 
 12. Lamb, Luis C., et al. [Graph neural networks meet neural-symbolic computing: A survey and perspective.](https://arxiv.org/pdf/2003.00330.pdf) arXiv preprint arXiv:2003.00330 (2020).
+
+13. Joshi, Chaitanya K., et al. [Learning TSP requires rethinking generalization.](https://drops.dagstuhl.de/opus/volltexte/2021/15324/pdf/LIPIcs-CP-2021-33.pdf) 27th International Conference on Principles and Practice of Constraint Programming (CP 2021). Schloss Dagstuhl-Leibniz-Zentrum für Informatik, 2021.
+
+14. Yolcu, Emre, and Barnabás Póczos. [Learning local search heuristics for boolean satisfiability.](https://proceedings.neurips.cc/paper/2019/file/12e59a33dea1bf0630f46edfe13d6ea2-Paper.pdf) Advances in Neural Information Processing Systems 32 (2019).  (SAT)
+
+15. 
 
 
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
@@ -89,7 +97,15 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 14. Vesselinova, Natalia, et al. [Learning combinatorial optimization on graphs: A survey with applications to networking.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9125934) IEEE Access 8 (2020): 120388-120416.
 
-15. 
+15. Drori, Iddo, et al. [Learning to solve combinatorial optimization problems on real-world graphs in linear time.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9356192&casa_token=Oi5pcBrVZXsAAAAA:tU7zH7gVr30gu9t-4Ake0J7kSSQPakVjGU6l-Z-GsNSOHFG9uYamA_2y08921AORYhF0wjptXHxO) 2020 19th IEEE International Conference on Machine Learning and Applications (ICMLA). IEEE, 2020.
+
+16. Luz, Ilay, et al. [Learning algebraic multigrid using graph neural networks.](http://proceedings.mlr.press/v119/luz20a/luz20a.pdf) International Conference on Machine Learning. PMLR, 2020.
+
+17. Khalil, Elias B., Christopher Morris, and Andrea Lodi. [Mip-gnn: A data-driven framework for guiding combinatorial solvers.](https://ojs.aaai.org/index.php/AAAI/article/download/21262/21011) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 36. No. 9. 2022.
+
+18. Ju, Haotian, et al. [Generalization in Graph Neural Networks: Improved PAC-Bayesian Bounds on Graph Diffusion.](https://proceedings.mlr.press/v206/ju23a/ju23a.pdf) International Conference on Artificial Intelligence and Statistics. PMLR, 2023.
+
+19. 
 
 
 
