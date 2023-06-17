@@ -64,7 +64,20 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 14. Yolcu, Emre, and Barnabás Póczos. [Learning local search heuristics for boolean satisfiability.](https://proceedings.neurips.cc/paper/2019/file/12e59a33dea1bf0630f46edfe13d6ea2-Paper.pdf) Advances in Neural Information Processing Systems 32 (2019).  (SAT)
 
-15. 
+15. Joshi, Chaitanya K., et al. [Learning the travelling salesperson problem requires rethinking generalization.](https://link.springer.com/article/10.1007/s10601-022-09327-y) Constraints 27.1-2 (2022): 70-98.
+
+16. Kurin, Vitaly, et al. [Can Q-learning with graph networks learn a generalizable branching heuristic for a SAT solver?.](https://proceedings.neurips.cc/paper/2020/file/6d70cb65d15211726dcce4c0e971e21c-Paper.pdf) Advances in Neural Information Processing Systems 33 (2020): 9608-9621.
+
+
+17. Zhang, Wenjie, et al. [NLocalSAT: Boosting local search with solution prediction.](https://arxiv.org/pdf/2001.09398) arXiv preprint arXiv:2001.09398 (2020).
+
+18. Zhang, Lisa, et al. [Neural guided constraint logic programming for program synthesis.](https://proceedings.neurips.cc/paper/2018/file/67d16d00201083a2b118dd5128dd6f59-Paper.pdf) Advances in Neural Information Processing Systems 31 (2018).
+
+19. Abdelaziz, Ibrahim, et al. [Learning to guide a saturation-based theorem prover.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9669114&casa_token=uaofxFc5dUEAAAAA:zgqvtqcP8gxwPT_xmyxwoRfProT2EhPPc2vwQ_BNicsOEt22geofLCOlre8TKv_NIgIF0IMXm5Su) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.1 (2022): 738-751.
+
+20. Angelini, Maria Chiara, and Federico Ricci-Tersenghi. [Cracking nuts with a sledgehammer: when modern graph neural networks do worse than classical greedy algorithms.](https://arxiv.org/pdf/2206.13211) arXiv preprint arXiv:2206.13211 (2022).
+
+21. Tönshoff, Jan, et al. [One model, any CSP: Graph neural networks as fast global search heuristics for constraint satisfaction.](https://arxiv.org/pdf/2208.10227) arXiv preprint arXiv:2208.10227 (2022).
 
 
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
@@ -105,10 +118,10 @@ From my observation, travel salesman problem is the most researhed topicm then S
 
 18. Ju, Haotian, et al. [Generalization in Graph Neural Networks: Improved PAC-Bayesian Bounds on Graph Diffusion.](https://proceedings.mlr.press/v206/ju23a/ju23a.pdf) International Conference on Artificial Intelligence and Statistics. PMLR, 2023.
 
-19. 
+19. Angelini, Maria Chiara, and Federico Ricci-Tersenghi. [Modern graph neural networks do worse than classical greedy algorithms in solving combinatorial optimization problems like maximum independent set.](https://www.nature.com/articles/s42256-022-00589-y) Nature Machine Intelligence 5.1 (2023): 29-31.
 
 
-
+20. 
 
 
 
