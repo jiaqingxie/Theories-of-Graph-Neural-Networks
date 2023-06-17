@@ -10,7 +10,12 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 3. Ritzert, Martin. [Learning on graphs with logic and neural networks.](https://publications.rwth-aachen.de/record/833937/files/833937.pdf) Diss. Dissertation, RWTH Aachen University, 2021, 2021.
 
-### Expressive Power of Graph Neural Networks (WL-test)
+4. Buffelli, Davide. [Improving the Effectiveness of Graph Neural Networks in Practical Scenarios.](https://www.research.unipd.it/bitstream/11577/3472978/2/thesis_pdfa.pdf) (2023).
+
+5. Kidger, Patrick. [On neural differential equations.](https://arxiv.org/pdf/2202.02435) arXiv preprint arXiv:2202.02435 (2022).
+
+
+### Expressive Power of Graph Neural Networks (WL-test, Equivariance, Invariance)
 
 
 ### Geometric Graph Neural Networks, Topology (Lie Group)
@@ -24,11 +29,6 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 4. 
 
 
-
-
-
-
-### Graph Equivariant Layers
 
 
 
@@ -115,6 +115,8 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 38. Amizadeh, Saeed, Sergiy Matusevych, and Markus Weimer. [PDP: A General Neural Framework for Learning SAT Solvers.](https://openreview.net/pdf?id=S1xaf6VFPB)
 
+39. de Aquino Afonso, Bruno Klaus, et al. [Kdd-br 2021: Using graph neural networks for link prediction in tsp problem.](https://sol.sbc.org.br/index.php/eniac/article/download/18426/18259/) Anais do XVIII Encontro Nacional de Inteligência Artificial e Computacional. SBC, 2021.
+
 ### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
 
 1. Cappart, Quentin, et al. [Combinatorial optimization and reasoning with graph neural networks.](https://arxiv.org/pdf/2102.09544.pdf) arXiv preprint arXiv:2102.09544 (2021).
@@ -168,10 +170,37 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 
 ### Theoretical Biochemistry
-
+1. Gilmer, Justin, et al. [Neural message passing for quantum chemistry.](http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf) International conference on machine learning. PMLR, 2017.
 
 ### Partial / Ordinary Differential Equations
 
+1. Poli, Michael, et al. [Graph neural ordinary differential equations.](https://arxiv.org/pdf/1911.07532) arXiv preprint arXiv:1911.07532 (2019).
+
+2. Rusch, T. Konstantin, et al. [Graph-coupled oscillator networks.](https://proceedings.mlr.press/v162/rusch22a/rusch22a.pdf) International Conference on Machine Learning. PMLR, 2022.
+
+3. Xhonneux, Louis-Pascal, Meng Qu, and Jian Tang. [Continuous graph neural networks.](http://proceedings.mlr.press/v119/xhonneux20a/xhonneux20a.pdf) International Conference on Machine Learning. PMLR, 2020.
+
+4.  Zhuang, Juntang, et al. [Ordinary differential equations on graph networks.](https://openreview.net/pdf?id=SJg9z6VFDr) (2020).
+
+5. Chamberlain, Ben, et al. [Grand: Graph neural diffusion.](http://proceedings.mlr.press/v139/chamberlain21a/chamberlain21a.pdf) International Conference on Machine Learning. PMLR, 2021.
+
+6. Thorpe, Matthew, et al. [GRAND++: Graph neural diffusion with a source term.](https://par.nsf.gov/servlets/purl/10320328) International Conference on Learning Representations. 2022.
+
+7. Di Giovanni, Francesco, et al. [Graph neural networks as gradient flows.](https://arxiv.org/pdf/2206.10991) arXiv preprint arXiv:2206.10991 (2022).
+
+8. Jin, Ming, et al. [Multivariate time series forecasting with dynamic graph neural ODEs.](https://ieeexplore.ieee.org/iel7/69/4358933/09950330.pdf?casa_token=XvAML47fTbwAAAAA:DZsuXIJ3q4vSMK4wEruzd6D7nSH-aZ9zUyKzhokuQeiYVYN7Pr9VLWsh2XEbGrg_uDN-gtGX9BJa) IEEE Transactions on Knowledge and Data Engineering (2022).
+
+9. Hadou, Samar, Charilaos I. Kanatsoulis, and Alejandro Ribeiro. [Space-time graph neural networks.](https://arxiv.org/pdf/2110.02880) arXiv preprint arXiv:2110.02880 (2021).
+
+10. Baker, Justin, et al. [Proximal Implicit ODE Solvers for Accelerating Learning Neural ODEs.](https://arxiv.org/pdf/2204.08621) arXiv preprint arXiv:2204.08621 (2022).
+
+11.
+
+
+12. 
+
+
+Brandstetter, Johannes, Daniel Worrall, and Max Welling. "Message passing neural PDE solvers." arXiv preprint arXiv:2202.03376 (2022).
 
 ### Group Theories
 
