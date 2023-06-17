@@ -243,9 +243,17 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 33. Huang, Xinquan, et al. [NeuralStagger: accelerating physics-constrained neural PDE solver with spatial-temporal decomposition.](https://arxiv.org/pdf/2302.10255) arXiv preprint arXiv:2302.10255 (2023).
 
-34. 
+34. Nastorg, Matthieu, et al. [An Implicit GNN Solver for Poisson-like problems.](https://arxiv.org/pdf/2302.10891) arXiv preprint arXiv:2302.10891 (2023).
 
-35. 
+35. Boussif, Oussama, et al. [MAgnet: Mesh agnostic neural PDE solver.](https://proceedings.neurips.cc/paper_files/paper/2022/file/cf4c7ee0734cdfe09a099cf6cd7b117a-Paper-Conference.pdf) Advances in Neural Information Processing Systems 35 (2022): 31972-31985.
+
+36. Hua, Chuanbo, et al. [Graph Spline Networks for Efficient Continuous Simulation of Dynamical Systems.](https://openreview.net/pdf?id=loc3CUXeuzH) (2023).
+
+37. Li, Yichen, et al. [NeuralPCG: Learning Preconditioner for Solving Partial Differential Equations with Graph Neural Network.](https://openreview.net/pdf?id=IDSXUFQeZO5) (2023).
+
+38. Li, Qing, et al. [Solving Nonlinear Conservation Laws of Partial Differential Equations Using Graph Neural Networks.](https://septentrio.uit.no/index.php/nldl/article/download/6808/7008) Proceedings of the Northern Lights Deep Learning Workshop. Vol. 4. 2023.
+
+39. Wu, Tailin, et al. [Learning Controllable Adaptive Simulation for Multi-scale Physics.](https://openreview.net/pdf?id=PhktEpJHU3) NeurIPS 2022 AI for Science: Progress and Promises.
 
 ### Group Theories
 
