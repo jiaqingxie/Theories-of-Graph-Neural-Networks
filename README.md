@@ -325,9 +325,6 @@ Many of the papers that bridges topology and equivariant graphNN that mentioned 
 
 34. Bogatskiy, Alexander, et al. [Symmetry group equivariant architectures for physics.](https://arxiv.org/pdf/2203.06153) arXiv preprint arXiv:2203.06153 (2022).
 
-35. 
-
-
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
 From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
@@ -473,8 +470,22 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 25. Bo, Deyu, et al. [A Survey on Spectral Graph Neural Networks.](https://arxiv.org/pdf/2302.05631) arXiv preprint arXiv:2302.05631 (2023).
 
 
-### Optimization, Gradient Descent & Error Bounds
+### Gradient Descent & Error Bounds on Graph Neural Networks (Convex/Concave)
 
+
+1. Izadi, Mohammad Rasool, et al. [Optimization of graph neural networks with natural gradient descent.](https://arxiv.org/pdf/2008.09624) 2020 IEEE international conference on big data (big data). IEEE, 2020.
+
+2. Awasthi, Pranjal, Abhimanyu Das, and Sreenivas Gollapudi. [A Convergence Analysis of Gradient Descent on Graph Neural Networks.](https://proceedings.neurips.cc/paper/2021/file/aaf2979785deb27864047e0ea40ef1b7-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 20385-20397.
+
+3. Lee, Junghyun, et al. [A Statistical Analysis of Stochastic Gradient Noises for GNNs.](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11113553) 한국정보과학회 학술발표논문집 (2022): 1025-1027.
+
+4. Li, Qunwei, Shaofeng Zou, and Wenliang Zhong. [Learning graph neural networks with approximate gradient descent.](https://ojs.aaai.org/index.php/AAAI/article/download/17025/16832) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 10. 2021.
+
+5. Yadati, Naganand. [A Convex Formulation for Graph Convolutional Training: Two Layer Case.](https://ieeexplore.ieee.org/abstract/document/10027696/) 2022 IEEE International Conference on Data Mining (ICDM). IEEE, 2022.
+
+6. Park, Junyoung, Chihyeon Song, and Jinkyoo Park. [Input Convex Graph Neural Networks: An Application to Optimal Control and Design Optimization.](https://openreview.net/forum?id=S2pNPZM-w-f)
+
+7. Xu, Keyulu, et al. [Optimization of graph neural networks: Implicit acceleration by skip connections and more depth.](http://proceedings.mlr.press/v139/xu21k/xu21k.pdf) International Conference on Machine Learning. PMLR, 2021.
 
 
 # Graph Representation Learning on Theoretical Natural Sciences
