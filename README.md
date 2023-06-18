@@ -1,9 +1,9 @@
 # Theorys of Graph Neural Networks
-Theoretical Foundations of Graph Neural Networks,  Ziheng Chi, Yuxin Wang, Jiaqing Xie
+Theoretical Foundations of Graph Neural Networks,  Ziheng Chi (ETH), Yuxin Wang (Fudan), Jiaqing Xie (ETH)
 
 This collection of Graph Neural Network (GNN) works distinguishes itself from other existing collections of GNN survey papers. It assists in crafting theoretical references related to GNNs and, more crucially, offers a more expansive viewpoint on the evolution of GNN theories, such as expressive power and SE(3) equivariant power, in the past few years.
 
-### Some General Surveys
+### Some General Theoretical GNN Surveys
 
 1. Zhou, Yu, et al. [Graph neural networks: Taxonomy, advances, and trends.](https://dl.acm.org/doi/full/10.1145/3495161?casa_token=wnutK67-_XQAAAAA:lMyEyQ2PckAAPoQX5V3hfF6lyxFoLjLhFjEH387d8ukre5fAn2w0pBLjREG4yqd2QEtD9Xd_VsMl76o) ACM Transactions on Intelligent Systems and Technology (TIST) 13.1 (2022): 1-54.
 
@@ -13,11 +13,10 @@ This collection of Graph Neural Network (GNN) works distinguishes itself from ot
 
 4. Buffelli, Davide. [Improving the Effectiveness of Graph Neural Networks in Practical Scenarios.](https://www.research.unipd.it/bitstream/11577/3472978/2/thesis_pdfa.pdf) (2023).
 
-5. Kidger, Patrick. [On neural differential equations.](https://arxiv.org/pdf/2202.02435) arXiv preprint arXiv:2202.02435 (2022).
 
-6. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
+55. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
 
-7. Khoshraftar, Shima, and Aijun An. [A survey on graph representation learning methods.](https://arxiv.org/pdf/2204.01855) arXiv preprint arXiv:2204.01855 (2022).
+6. Khoshraftar, Shima, and Aijun An. [A survey on graph representation learning methods.](https://arxiv.org/pdf/2204.01855) arXiv preprint arXiv:2204.01855 (2022).
 
 
 ### Expressive Power of Graph Neural Networks (WL-test, Equivariance, Invariance)
