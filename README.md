@@ -609,42 +609,17 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 24. You, Ronghui, et al. [DeepGraphGO: graph neural network for large-scale, multispecies protein function prediction.](https://academic.oup.com/bioinformatics/article/37/Supplement_1/i262/6319663) Bioinformatics 37.Supplement_1 (2021): i262-i271.
 
 
-25. 
+25. Ingraham, John, et al. [Generative models for graph-based protein design.](https://proceedings.neurips.cc/paper/2019/file/f3a4ff4839c56a5f460c88cce3666a2b-Paper.pdf) Advances in neural information processing systems 32 (2019).
 
+26. Fout, Alex, et al. [Protein interface prediction using graph convolutional networks.](https://proceedings.neurips.cc/paper/2017/file/f507783927f2ec2737ba40afbd17efb5-Paper.pdf) Advances in neural information processing systems 30 (2017).
 
-26. 
+27. Zhang, Zuobai, et al. [Protein representation learning by geometric structure pretraining.](https://arxiv.org/pdf/2203.06125) arXiv preprint arXiv:2203.06125 (2022).
 
+28. Zhang, Zuobai, et al. [Enhancing protein language models with structure-based encoder and pre-training.](https://arxiv.org/pdf/2303.06275) arXiv preprint arXiv:2303.06275 (2023).
 
-27. 
+29. Chen, Can, et al. [Structure-aware protein self-supervised learning.](https://academic.oup.com/bioinformatics/article/39/4/btad189/7117544) Bioinformatics 39.4 (2023): btad189.
 
-
-28. 
-
-
-29. 
-
-
-30.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+30. Yu, Yue, et al. [DAG-GNN: DAG structure learning with graph neural networks.](http://proceedings.mlr.press/v97/yu19a/yu19a.pdf) International Conference on Machine Learning. PMLR, 2019.
 
 ### Partial / Ordinary Differential Equations
 
