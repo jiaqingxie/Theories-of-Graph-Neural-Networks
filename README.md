@@ -1,5 +1,5 @@
 # Theorys of Graph Neural Networks
-A List of Papers on Theoretical Foundations and Explorations of Graph Neural Networks
+A List of Papers on Theoretical Foundations and Explorations of Graph Neural Networks,  Jiaqing Xie, Yuxin Wang, Ziheng Chi
 
 
 ### Some General Surveys
