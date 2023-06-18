@@ -1,7 +1,9 @@
 # Theorys of Graph Neural Networks
-Theoretical Foundations of Graph Neural Networks,  Ziheng Chi (ETH), Yuxin Wang (Fudan), Jiaqing Xie (ETH)
+Theoretical Foundations of Graph Neural Networks, Jiaqing Xie (ETH), Yuxin Wang (Fudan), Ziheng Chi (ETH)
 
 This collection of Graph Neural Network (GNN) works distinguishes itself from other existing collections of GNN survey papers. It assists in crafting theoretical references related to GNNs and, more crucially, offers a more expansive viewpoint on the evolution of GNN theories, such as expressive power and SE(3) equivariant power, in the past few years.
+
+In the second part, using domain graph neural networks to explain important natural science theories such as PDE, biochemistry are included. Ultimately we won't consider any social science relateds networks.  
 
 ### Some General Theoretical GNN Surveys
 
@@ -555,11 +557,94 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 30. Ehrke, Lukas, et al. [Topological Reconstruction of Particle Physics Processes using Graph Neural Networks.](https://arxiv.org/pdf/2303.13937) arXiv preprint arXiv:2303.13937 (2023).
 
 ### Theoretical Biochemistry
+There are huge amounts of GNN works done in this domain. Here we extract some important works for quick references, including molecule, drug, protein, retrosynthesis and single cell RNA seq.
+
 1. Gilmer, Justin, et al. [Neural message passing for quantum chemistry.](http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf) International conference on machine learning. PMLR, 2017.
 
 2. Thölke, Philipp, and Gianni De Fabritiis. [Equivariant transformers for neural network based molecular potentials.](https://openreview.net/pdf?id=zNHzqZ9wrRB) International Conference on Learning Representations. 2022.
 
-3. 
+3. Schütt, Kristof, et al. [Schnet: A continuous-filter convolutional neural network for modeling quantum interactions.](https://proceedings.neurips.cc/paper/2017/file/303ed4c69846ab36c2904d3ba8573050-Paper.pdf) Advances in neural information processing systems 30 (2017).
+
+4. Feinberg, Evan N., et al. [PotentialNet for molecular property prediction.](https://pubs.acs.org/doi/pdf/10.1021/acscentsci.8b00507) ACS central science 4.11 (2018): 1520-1530.
+
+5. Lu, Chengqiang, et al. [Molecular property prediction: A multilevel quantum interactions modeling perspective.](https://ojs.aaai.org/index.php/AAAI/article/download/3896/3774) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. No. 01. 2019.
+
+6. You, Jiaxuan, et al. [Graph convolutional policy network for goal-directed molecular graph generation.](https://proceedings.neurips.cc/paper/2018/file/d60678e8f2ba9c540798ebbde31177e8-Paper.pdf) Advances in neural information processing systems 31 (2018).
+
+7. Mercado, Rocío, et al. [Graph networks for molecular design.](https://iopscience.iop.org/article/10.1088/2632-2153/abcf91/pdf) Machine Learning: Science and Technology 2.2 (2021): 025023.
+
+8. Liu, Qi, et al. [Constrained graph variational autoencoders for molecule design.](https://proceedings.neurips.cc/paper/2018/file/b8a03c5c15fcfa8dae0b03351eb1742f-Paper.pdf) Advances in neural information processing systems 31 (2018).
+
+9. Liu, Shengchao, Hongyu Guo, and Jian Tang. [Molecular geometry pretraining with se (3)-invariant denoising distance matching.](https://arxiv.org/pdf/2206.13602) arXiv preprint arXiv:2206.13602 (2022).
+
+10. Wang, Juexin, et al. [scGNN is a novel graph neural network framework for single-cell RNA-Seq analyses.](https://www.nature.com/articles/s41467-021-22197-x) Nature communications 12.1 (2021): 1882.
+
+11. Gu, Haocheng, et al. [scGNN 2.0: a graph neural network tool for imputation and clustering of single-cell RNA-Seq data.](https://u.osu.edu/bmbl/files/2022/10/btac684.pdf) Bioinformatics 38.23 (2022): 5322-5325.
+
+12. Gan, Yanglan, et al. [Deep structural clustering for single-cell RNA-seq data jointly through autoencoder and graph neural network.](https://academic.oup.com/bib/article/23/2/bbac018/6529282) Briefings in Bioinformatics 23.2 (2022).
+
+13. Wen, Hongzhi, et al. [Graph neural networks for multimodal single-cell data integration.](https://arxiv.org/pdf/2203.01884) Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2022.
+
+14. Shao, Xin, et al. [scDeepSort: a pre-trained cell-type annotation method for single-cell transcriptomics using deep learning with a weighted graph neural network.](https://academic.oup.com/nar/article/49/21/e122/6368052) Nucleic acids research 49.21 (2021): e122-e122.
+
+15. Zeng, Yuansong, et al. [A robust and scalable graph neural network for accurate single-cell classification.](https://www.biorxiv.org/content/biorxiv/early/2021/06/25/2021.06.24.449752.full.pdf) Briefings in Bioinformatics 23.2 (2022): bbab570.
+
+16. Liu, Cheng-Hao, et al. [RetroGNN: Approximating retrosynthesis by graph neural networks for de novo drug design.](https://arxiv.org/pdf/2011.13042) arXiv preprint arXiv:2011.13042 (2020).
+
+17. Dai, Hanjun, et al. [Retrosynthesis prediction with conditional graph logic network.](https://proceedings.neurips.cc/paper/2019/file/0d2b2061826a5df3221116a5085a6052-Paper.pdf) Advances in Neural Information Processing Systems 32 (2019).
+
+18. Tu, Zhengkai, and Connor W. Coley. [Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction.](https://arxiv.org/pdf/2110.09681) Journal of chemical information and modeling 62.15 (2022): 3503-3513.
+
+19. Somnath, Vignesh Ram, et al. [Learning graph models for retrosynthesis prediction.](https://proceedings.neurips.cc/paper/2021/file/4e2a6330465c8ffcaa696a5a16639176-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 9405-9415.
+
+20. Mao, Kelong, et al. [Molecular graph enhanced transformer for retrosynthesis prediction.](https://www.biorxiv.org/content/biorxiv/early/2020/03/09/2020.03.05.979773.full.pdf) Neurocomputing 457 (2021): 193-202.
+
+21. Shi, Chence, et al. [A graph to graphs framework for retrosynthesis prediction.](http://proceedings.mlr.press/v119/shi20d/shi20d.pdf) International conference on machine learning. PMLR, 2020.
+
+22. Han, Peng, et al. [Gnn-retro: Retrosynthetic planning with graph neural networks.](https://ojs.aaai.org/index.php/AAAI/article/download/20318/20077) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 36. No. 4. 2022.
+
+23. Strokach, Alexey, et al. [Fast and flexible protein design using deep graph neural networks.](https://www.sciencedirect.com/science/article/pii/S2405471220303276) Cell systems 11.4 (2020): 402-411.
+
+
+24. You, Ronghui, et al. [DeepGraphGO: graph neural network for large-scale, multispecies protein function prediction.](https://academic.oup.com/bioinformatics/article/37/Supplement_1/i262/6319663) Bioinformatics 37.Supplement_1 (2021): i262-i271.
+
+
+25. 
+
+
+26. 
+
+
+27. 
+
+
+28. 
+
+
+29. 
+
+
+30.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Partial / Ordinary Differential Equations
 
@@ -708,18 +793,36 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 31. Klemmer, Konstantin, Nathan S. Safir, and Daniel B. Neill. [Positional encoder graph neural networks for geographic data.](https://proceedings.mlr.press/v206/klemmer23a/klemmer23a.pdf) International Conference on Artificial Intelligence and Statistics. PMLR, 2023.
 
-### Astronomy
+### Cosmology, Astrophysics
+1. Cranmer, Miles, Peter Melchior, and Brian Nord. [Unsupervised resource allocation with graph neural networks.](http://proceedings.mlr.press/v148/cranmer21a/cranmer21a.pdf) NeurIPS 2020 Workshop on Pre-registration in Machine Learning. PMLR, 2021.
+
+2. Jespersen, Christian Kragh, et al. [$\texttt {Mangrove} $: Learning Galaxy Properties from Merger Trees.](https://arxiv.org/pdf/2210.13473) arXiv preprint arXiv:2210.13473 (2022).
+
+3. Wang, Tianshu, and Peter Melchior. [Graph neural network-based resource allocation strategies for multi-object spectroscopy.](https://iopscience.iop.org/article/10.1088/2632-2153/ac4d12/pdf) Machine Learning: Science and Technology 3.1 (2022): 015023.
+
+4. Farsian, Farida, et al. [New applications of Graph Neural Networks in Cosmology.](https://arxiv.org/pdf/2210.11487) arXiv preprint arXiv:2210.11487 (2022).
+
+5. Villanueva-Domingo, Pablo, et al. [Inferring Halo Masses with Graph Neural Networks.](https://iopscience.iop.org/article/10.3847/1538-4357/ac7aa3/pdf) The Astrophysical Journal 935.1 (2022): 30.
+
+6. Villanueva-Domingo, Pablo, and Francisco Villaescusa-Navarro. [Learning cosmology and clustering with cosmic graphs.](https://iopscience.iop.org/article/10.3847/1538-4357/ac8930/pdf) The Astrophysical Journal 937.2 (2022): 115.
+
+7. Nguyen, Tri, et al. [Uncovering dark matter density profiles in dwarf galaxies with graph neural networks.](https://arxiv.org/pdf/2208.12825) Physical Review D 107.4 (2023): 043015.
+
+8. Koundal, Paras, and IceCube Collaboration. [Composition Analysis of cosmic-rays at IceCube Observatory, using Graph Neural Networks.](https://publikationen.bibliothek.kit.edu/1000143576) Workshop on Machine Learning for Cosmic-Ray Air Showers (2022), Newark, DE, USA, 31.01. 2022–03.02. 2022. 2022.
+
+9. Jagvaral, Yesukhei, et al. [Galaxies on graph neural networks: towards robust synthetic galaxy catalogs with deep generative models.](https://arxiv.org/pdf/2212.05596) arXiv preprint arXiv:2212.05596 (2022).
+
+10. Choma, Nicholas, et al. [Graph neural networks for icecube signal classification.](https://arxiv.org/pdf/1809.06166) 2018 17th IEEE International Conference on Machine Learning and Applications (ICMLA). IEEE, 2018.
+
+11. Reck, S., et al. [Graph neural networks for reconstruction and classification in KM3NeT.](https://arxiv.org/pdf/2107.13375) Journal of Instrumentation 16.10 (2021): C10011.
+
+12. Koundal, Paras, Matthias Plum, and Julian Saffer. [Study of mass composition of cosmic rays with IceTop and IceCube.](https://arxiv.org/pdf/2107.09626) arXiv preprint arXiv:2107.09626 (2021).
+
+13. ...
 
 
-### Social Networks
+## TODO List:
+1. Energy based Graph Neural Networks (First Part)
+2. Finding more references on spectral graph theories with graph neural networks (Traditional Analysis + Learning Based Methods) in first part
 
-1. Li, Yandi, et al. [A Survey on Influence Maximization: From an ML-Based Combinatorial Optimization.](https://arxiv.org/pdf/2211.03074) arXiv preprint arXiv:2211.03074 (2022).
-
-2. Bessadok, Alaa, Mohamed Ali Mahjoub, and Islem Rekik. [Graph neural networks in network neuroscience.](https://ieeexplore.ieee.org/iel7/34/4359286/09903566.pdf?casa_token=DXqbQXZSRE4AAAAA:-WXBJ2ysiCcgXegKsfjVt-wOez7YslcrXTlKz8TPTY9czqFiQ_U3uhFJbNd1yzb7QgG27mEWKnmw) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.5 (2022): 5833-5848.
-
-3. Zhong, Ting, et al. [Multiple-aspect attentional graph neural networks for online social network user localization.](https://ieeexplore.ieee.org/iel7/6287639/8948470/09091140.pdf) IEEE Access 8 (2020): 95223-95234.
-
-4. Zhong, Zhiqiang. [Leveraging Graph Machine Learning for Social Network Analysis.](https://orbilu.uni.lu/bitstream/10993/50811/1/Thesis-Submit-To-UL-Version.pdf) Diss. University of Luxembourg,​ Esch-sur-Alzette,​​ Luxembourg, 2022.
-
-
-This repo is monthly updated. 
+This repo is going to be frequently updated. Some new theoretical papers will be added. Old papers or unimportant papers will be removed after careful considerations.
