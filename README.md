@@ -283,6 +283,28 @@ Many of the papers that bridges topology and equivariant graphNN that mentioned 
 
 13. Zhang, Jiying, et al. [Fine-tuning graph neural networks via graph topology induced optimal transport.](https://arxiv.org/pdf/2203.10453) arXiv preprint arXiv:2203.10453 (2022).
 
+14. Southern, Joshua, et al. [Curvature filtrations for graph generative model evaluation.](https://arxiv.org/pdf/2301.12906) arXiv preprint arXiv:2301.12906 (2023).
+
+15. Zhang, Simon, Soham Mukherjee, and Tamal K. Dey. [GEFL: Extended Filtration Learning for Graph Classification.](https://proceedings.mlr.press/v198/zhang22b/zhang22b.pdf) Learning on Graphs Conference. PMLR, 2022.
+
+16. Xu, Jiaxing, et al. [Union Subgraph Neural Networks.](https://arxiv.org/pdf/2305.15747) arXiv preprint arXiv:2305.15747 (2023).
+
+17. Chen, Yuzhou, Elena Sizikova, and Yulia R. Gel. [TopoAttn-Nets: Topological Attention in Graph Representation Learning.](https://2022.ecmlpkdd.org/wp-content/uploads/2022/09/sub_1052.pdf) Joint European Conference on Machine Learning and Knowledge Discovery in Databases. Cham: Springer International Publishing, 2022.
+
+18. Gao, He, et al. [Topological Graph Convolutional Network Based on Complex Network Characteristics.](https://ieeexplore.ieee.org/iel7/6287639/9668973/09795303.pdf) IEEE Access 10 (2022): 64465-64472.
+
+19. Horoi, Stefan, et al. [Exploring the geometry and topology of neural network loss landscapes.](https://arxiv.org/pdf/2102.00485) Advances in Intelligent Data Analysis XX: 20th International Symposium on Intelligent Data Analysis, IDA 2022, Rennes, France, April 20–22, 2022, Proceedings. Cham: Springer International Publishing, 2022.
+
+20. Rieck, Bastian. [On the Expressivity of Persistent Homology in Graph Learning.](https://arxiv.org/pdf/2302.09826) arXiv preprint arXiv:2302.09826 (2023).
+
+21. Aktas, Mehmet Emin, Thu Nguyen, and Esra Akbas. [Homology Preserving Graph Compression.](https://ieeexplore.ieee.org/iel7/9679834/9679948/09680010.pdf) 2021 20th IEEE International Conference on Machine Learning and Applications (ICMLA). IEEE, 2021.
+
+22. Bamberger, Jacob. [A Topological characterisation of Weisfeiler-Leman equivalence classes.](https://proceedings.mlr.press/v196/bamberger22a/bamberger22a.pdf) Topological, Algebraic and Geometric Learning Workshops 2022. PMLR, 2022.
+
+23. Xin, Cheng, et al. [A $2 $-parameter Persistence Layer for Learning.](https://openreview.net/pdf?id=WF7dU23lRCo) (2023).
+
+24. Segovia-Dominguez, Ignacio, et al. [EMP: Effective Multidimensional Persistence for Graph Representation Learning.](https://openreview.net/pdf?id=pBaSwBkHBE) (2023).
+
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
 From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
 
