@@ -16,6 +16,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 6. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
 
+7. Khoshraftar, Shima, and Aijun An. [A survey on graph representation learning methods.](https://arxiv.org/pdf/2204.01855) arXiv preprint arXiv:2204.01855 (2022).
 
 
 ### Expressive Power of Graph Neural Networks (WL-test, Equivariance, Invariance)
@@ -213,7 +214,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 67. Chen, Samantha, et al. [Weisfeiler-Lehman Meets Gromov-Wasserstein.](https://proceedings.mlr.press/v162/chen22o/chen22o.pdf) International Conference on Machine Learning. PMLR, 2022.
 
 
-68.  Puny, Omri, et al. [Equivariant polynomials for graph neural networks.](https://arxiv.org/pdf/2302.11556) arXiv preprint arXiv:2302.11556 (2023).
+68.  Puny, Omri, et al. [Beddar-Wiesing, Silvia, et al. "Weisfeiler--Lehman goes Dynamic: An Analysis of the Expressive Power of Graph Neural Networks for Attributed and Dynamic Graphs." arXiv preprint arXiv:2210.03990 (2022). for graph neural networks.](https://arxiv.org/pdf/2302.11556) arXiv preprint arXiv:2302.11556 (2023).
 
 
 69. Huang, Yinan, et al. [Boosting the Cycle Counting Power of Graph Neural Networks with I $^ 2$-GNNs.](https://arxiv.org/pdf/2210.13978) arXiv preprint arXiv:2210.13978 (2022).
@@ -227,13 +228,28 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 72. Luo, Zhezheng, et al. [On the Expressiveness and Generalization of Hypergraph Neural Networks.](https://arxiv.org/pdf/2303.05490) arXiv preprint arXiv:2303.05490 (2023).
 
 
-73. 
+73. Zhang, Bohang, et al. [A Complete Expressiveness Hierarchy for Subgraph GNNs via Subgraph Weisfeiler-Lehman Tests.](https://arxiv.org/pdf/2302.07090) arXiv preprint arXiv:2302.07090 (2023).
 
 
-74. 
+74. Zhu, Wenhao, et al. [On Structural Expressive Power of Graph Transformers."](https://arxiv.org/pdf/2305.13987) arXiv preprint arXiv:2305.13987 (2023).
 
+75. Liu, Chang, et al. [EDEN: A Plug-in Equivariant Distance Encoding to Beyond the 1-WL Test.](https://arxiv.org/pdf/2211.10739) arXiv preprint arXiv:2211.10739 (2022).
 
-75. 
+76. Le, Thien, and Stefanie Jegelka. [Limits, approximation and size transferability for GNNs on sparse graphs via graphops.](https://arxiv.org/pdf/2306.04495) arXiv preprint arXiv:2306.04495 (2023).
+
+77. Mitton, Joshua, and Roderick Murray-Smith. [Subgraph Permutation Equivariant Networks.](https://arxiv.org/pdf/2111.11840) arXiv preprint arXiv:2111.11840 (2021).
+
+78. Liu, Zhiyuan, et al. [Towards Equivariant Graph Contrastive Learning via Cross-Graph Augmentation.](https://openreview.net/pdf?id=ha9hPpthvQ) (2023).
+
+79. Dasoulas, Georgios. [Towards Expressive Graph Neural Networks: Theory, Algorithms, and Applications.](https://theses.hal.science/tel-03666690/document) Diss. Institut Polytechnique de Paris, 2022.
+
+80. Geerts, Floris, and Juan L. Reutter. [Expressiveness and approximation properties of graph neural networks.](https://arxiv.org/pdf/2204.04661) arXiv preprint arXiv:2204.04661 (2022).
+
+81. Lim, Derek, et al. [Sign and basis invariant networks for spectral graph representation learning.](https://arxiv.org/pdf/2202.13013) arXiv preprint arXiv:2202.13013 (2022).
+
+82. Morris, Christopher, et al. [Speqnets: Sparsity-aware permutation-equivariant graph networks.](https://proceedings.mlr.press/v162/morris22a/morris22a.pdf) International Conference on Machine Learning. PMLR, 2022.
+
+83. Kong, Lecheng, Yixin Chen, and Muhan Zhang. [Geodesic Graph Neural Network for Efficient Graph Representation Learning.](https://arxiv.org/pdf/2210.02636) arXiv preprint arXiv:2210.02636 (2022).
 
 ### Geometric Graph Neural Networks, Topology (Lie Group)
 
@@ -254,6 +270,8 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 7. Dehmamy, Nima, Albert-László Barabási, and Rose Yu. [Understanding the representation power of graph neural networks in learning graph topology.](https://proceedings.neurips.cc/paper/2019/file/73bf6c41e241e28b89d0fb9e0c82f9ce-Paper.pdf) Advances in Neural Information Processing Systems 32 (2019).
 
 8. Ye, Xue, Fang Sun, and Shiming Xiang. [TREPH: A Plug-In Topological Layer for Graph Neural Networks.](https://www.mdpi.com/1099-4300/25/2/331/pdf) Entropy 25.2 (2023): 331.
+
+9. Zheng, Shuai, et al. [Node-oriented Spectral Filtering for Graph Neural Networks.](https://arxiv.org/pdf/2212.03654) arXiv preprint arXiv:2212.03654 (2022).
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
 From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
@@ -629,6 +647,8 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 2. Bessadok, Alaa, Mohamed Ali Mahjoub, and Islem Rekik. [Graph neural networks in network neuroscience.](https://ieeexplore.ieee.org/iel7/34/4359286/09903566.pdf?casa_token=DXqbQXZSRE4AAAAA:-WXBJ2ysiCcgXegKsfjVt-wOez7YslcrXTlKz8TPTY9czqFiQ_U3uhFJbNd1yzb7QgG27mEWKnmw) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.5 (2022): 5833-5848.
 
 3. Zhong, Ting, et al. [Multiple-aspect attentional graph neural networks for online social network user localization.](https://ieeexplore.ieee.org/iel7/6287639/8948470/09091140.pdf) IEEE Access 8 (2020): 95223-95234.
+
+4. Zhong, Zhiqiang. [Leveraging Graph Machine Learning for Social Network Analysis.](https://orbilu.uni.lu/bitstream/10993/50811/1/Thesis-Submit-To-UL-Version.pdf) Diss. University of Luxembourg,​ Esch-sur-Alzette,​​ Luxembourg, 2022.
 
 
 This repo is monthly updated. 
