@@ -16,6 +16,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 6. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
 
+7. Khoshraftar, Shima, and Aijun An. [A survey on graph representation learning methods.](https://arxiv.org/pdf/2204.01855) arXiv preprint arXiv:2204.01855 (2022).
 
 
 ### Expressive Power of Graph Neural Networks (WL-test, Equivariance, Invariance)
@@ -246,7 +247,9 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 81. Lim, Derek, et al. [Sign and basis invariant networks for spectral graph representation learning.](https://arxiv.org/pdf/2202.13013) arXiv preprint arXiv:2202.13013 (2022).
 
-82. 
+82. Morris, Christopher, et al. [Speqnets: Sparsity-aware permutation-equivariant graph networks.](https://proceedings.mlr.press/v162/morris22a/morris22a.pdf) International Conference on Machine Learning. PMLR, 2022.
+
+83. Kong, Lecheng, Yixin Chen, and Muhan Zhang. [Geodesic Graph Neural Network for Efficient Graph Representation Learning.](https://arxiv.org/pdf/2210.02636) arXiv preprint arXiv:2210.02636 (2022).
 
 ### Geometric Graph Neural Networks, Topology (Lie Group)
 
