@@ -253,6 +253,8 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 ### Geometric Graph Neural Networks, Topology (Lie Group)
 
+Many of the papers that bridges topology and equivariant graphNN that mentioned above.
+
 1. Sahbi, Hichem. [Topologically-Consistent Magnitude Pruning for Very Lightweight Graph Convolutional Networks.](https://ieeexplore.ieee.org/document/9897899?denied=) 2022 IEEE International Conference on Image Processing (ICIP). IEEE, 2022.
 
 2. Paolino, Raffaele, et al. [Unveiling the Sampling Density in Non-Uniform Geometric Graphs.](https://arxiv.org/pdf/2210.08219.pdf) arXiv preprint arXiv:2210.08219 (2022).
@@ -272,6 +274,14 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 8. Ye, Xue, Fang Sun, and Shiming Xiang. [TREPH: A Plug-In Topological Layer for Graph Neural Networks.](https://www.mdpi.com/1099-4300/25/2/331/pdf) Entropy 25.2 (2023): 331.
 
 9. Zheng, Shuai, et al. [Node-oriented Spectral Filtering for Graph Neural Networks.](https://arxiv.org/pdf/2212.03654) arXiv preprint arXiv:2212.03654 (2022).
+
+10. Horn, Max, et al. [Topological graph neural networks.](https://arxiv.org/pdf/2102.07835) arXiv preprint arXiv:2102.07835 (2021).
+
+11. Wei, Lanning, Huan Zhao, and Zhiqiang He. [Designing the topology of graph neural networks: A novel feature fusion perspective.](https://dl.acm.org/doi/pdf/10.1145/3485447.3512185) Proceedings of the ACM Web Conference 2022. 2022.
+
+12. Liu, Shaohui, Chengyang Wu, and Hao Zhu. [Topology-aware graph neural networks for learning feasible and adaptive AC-OPF solutions.](https://ieeexplore.ieee.org/iel7/59/4374138/09992121.pdf) IEEE Transactions on Power Systems (2022).
+
+13. Zhang, Jiying, et al. [Fine-tuning graph neural networks via graph topology induced optimal transport.](https://arxiv.org/pdf/2203.10453) arXiv preprint arXiv:2203.10453 (2022).
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
 From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
