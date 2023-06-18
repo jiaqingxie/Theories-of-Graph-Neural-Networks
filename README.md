@@ -251,7 +251,7 @@ A List of Papers on Theoretical Foundations and Explorations of Graph Neural Net
 
 83. Kong, Lecheng, Yixin Chen, and Muhan Zhang. [Geodesic Graph Neural Network for Efficient Graph Representation Learning.](https://arxiv.org/pdf/2210.02636) arXiv preprint arXiv:2210.02636 (2022).
 
-### Geometric Graph Neural Networks, Topology (Lie Group)
+### Geometric Graph Neural Networks, Topology and Lie Group
 
 Many of the papers that bridges topology and equivariant graphNN that mentioned above.
 
@@ -304,6 +304,30 @@ Many of the papers that bridges topology and equivariant graphNN that mentioned 
 23. Xin, Cheng, et al. [A $2 $-parameter Persistence Layer for Learning.](https://openreview.net/pdf?id=WF7dU23lRCo) (2023).
 
 24. Segovia-Dominguez, Ignacio, et al. [EMP: Effective Multidimensional Persistence for Graph Representation Learning.](https://openreview.net/pdf?id=pBaSwBkHBE) (2023).
+
+25. Satorras, Vıctor Garcia, Emiel Hoogeboom, and Max Welling. [E (n) equivariant graph neural networks.](http://proceedings.mlr.press/v139/satorras21a/satorras21a.pdf) International conference on machine learning. PMLR, 2021.
+
+*26. Stärk, Hannes, et al. [Equibind: Geometric deep learning for drug binding structure prediction.](https://proceedings.mlr.press/v162/stark22b/stark22b.pdf) International Conference on Machine Learning. PMLR, 2022.
+
+27. Liu, Shengchao, et al. [Pre-training molecular graph representation with 3d geometry.](https://arxiv.org/pdf/2110.07728) arXiv preprint arXiv:2110.07728 (2021).
+
+28. Villar, Soledad, et al. [Scalars are universal: Equivariant machine learning, structured like classical physics.](https://proceedings.neurips.cc/paper/2021/file/f1b0775946bc0329b35b823b86eeb5f5-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 28848-28863.
+
+29. Satorras, Victor Garcia, et al. [E (n) equivariant normalizing flows.](https://arxiv.org/pdf/2105.09016) arXiv preprint arXiv:2105.09016 (2021).
+
+30. Ganea, Octavian-Eugen, et al. [Independent se (3)-equivariant models for end-to-end rigid protein docking.](https://arxiv.org/pdf/2111.07786.pdf?trk=public_post_comment-text) arXiv preprint arXiv:2111.07786 (2021).
+
+31. Brandstetter, Johannes, et al. [Geometric and physical quantities improve e (3) equivariant message passing.](https://arxiv.org/pdf/2110.02905) arXiv preprint arXiv:2110.02905 (2021).
+
+32. Gasteiger, Johannes, Chandan Yeshwanth, and Stephan Günnemann. [Directional message passing on molecular graphs via synthetic coordinates.](https://proceedings.neurips.cc/paper/2021/file/82489c9737cc245530c7a6ebef3753ec-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 15421-15433.
+
+33. Shuaibi, Muhammed, et al. [Rotation invariant graph neural networks using spin convolutions.](https://arxiv.org/pdf/2106.09575) arXiv preprint arXiv:2106.09575 (2021).
+
+34. Bogatskiy, Alexander, et al. [Symmetry group equivariant architectures for physics.](https://arxiv.org/pdf/2203.06153) arXiv preprint arXiv:2203.06153 (2022).
+
+35. 
+
+
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
 From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
@@ -521,6 +545,10 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 ### Theoretical Biochemistry
 1. Gilmer, Justin, et al. [Neural message passing for quantum chemistry.](http://proceedings.mlr.press/v70/gilmer17a/gilmer17a.pdf) International conference on machine learning. PMLR, 2017.
+
+2. Thölke, Philipp, and Gianni De Fabritiis. [Equivariant transformers for neural network based molecular potentials.](https://openreview.net/pdf?id=zNHzqZ9wrRB) International Conference on Learning Representations. 2022.
+
+3. 
 
 ### Partial / Ordinary Differential Equations
 
