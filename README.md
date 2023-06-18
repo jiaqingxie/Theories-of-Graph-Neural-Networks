@@ -1,7 +1,7 @@
 # Theorys of Graph Neural Networks
-Theoretical Foundations of Graph Neural Networks,  Jiaqing Xie, Yuxin Wang, Ziheng Chi
+Theoretical Foundations of Graph Neural Networks,  Ziheng Chi, Yuxin Wang, Jiaqing Xie
 
-This compendium of Graph Neural Network (GNN) works distinguishes itself from other assemblies of GNN papers. It assists in crafting theoretical references related to GNNs and, more crucially, offers a more expansive viewpoint on the evolution of GNN theories, such as expressive power and SE(3) equivariant power, in the past few years.
+This collection of Graph Neural Network (GNN) works distinguishes itself from other existing collections of GNN survey papers. It assists in crafting theoretical references related to GNNs and, more crucially, offers a more expansive viewpoint on the evolution of GNN theories, such as expressive power and SE(3) equivariant power, in the past few years.
 
 ### Some General Surveys
 
