@@ -799,5 +799,9 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 ## TODO List:
 1. Energy based Graph Neural Networks (First Part)
 2. Finding more references on spectral graph theories with graph neural networks (Traditional Analysis + Learning Based Methods) in first part
+3. Add neural SDE (stochastic differential equation. e.g. Molecular Dynamics) solvers 12/10/2023
+
+
+
 
 This repo is going to be frequently updated. Some new theoretical papers will be added. Old papers or unimportant papers will be removed after careful considerations.
