@@ -1,4 +1,7 @@
 # Awesome Collection of Graph Neural Network Theory Papers
+
+Important Mention: There's an important survey published in ICML 2024, So I will further classify those papers and add new papers according to the trends.
+
 Theoretical Foundations of Graph Neural Networks, Jiaqing Xie (ETH), Yuxin Wang (Fudan), Ziheng Chi (ETH)
 
 This collection of Graph Neural Network (GNN) works distinguishes itself from other existing collections of GNN survey papers. It assists in crafting theoretical references related to GNNs and, more crucially, offers a more expansive viewpoint on the evolution of GNN theories, such as expressive power and SE(3) equivariant power, in the past few years.
