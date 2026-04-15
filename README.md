@@ -1025,7 +1025,7 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 
 12. Koundal, Paras, Matthias Plum, and Julian Saffer. [Study of mass composition of cosmic rays with IceTop and IceCube.](https://arxiv.org/pdf/2107.09626) arXiv preprint arXiv:2107.09626 (2021).
 
-## Roadmap
+## Future Directions
 
 - Add a dedicated section on **energy-based GNNs**, graph diffusion, and score-based graph models.
 - Expand **spectral graph theory** with clearer separation between classical graph signal processing, learned Laplacians, and graph transformers with spectral encodings.
