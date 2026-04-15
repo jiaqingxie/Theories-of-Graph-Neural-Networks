@@ -740,7 +740,7 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 4. Abdughani, Murat, et al. [Probing stop pair production at the LHC with graph neural networks.](https://link.springer.com/content/pdf/10.1007/JHEP08(2019)055.pdf) Journal of High Energy Physics 2019.8 (2019): 1-14.
 
-5. Martínez, J. Arjona, et al. [Pileup mitigation at the Large Hadron Collider with graph neural networks.](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/content/pdf/10.1140/epjp/i2019-12710-3.pdf) The European Physical Journal Plus 134.7 (2019): 333.
+5. Martínez, J. Arjona, et al. [Pileup mitigation at the Large Hadron Collider with graph neural networks.](https://doi.org/10.1140/epjp/i2019-12710-3) The European Physical Journal Plus 134.7 (2019): 333.
 
 6. Ren, Jie, Lei Wu, and Jin Min Yang. [Unveiling CP property of top-Higgs coupling with graph neural networks at the LHC.](https://www.sciencedirect.com/science/article/pii/S0370269320300022) Physics Letters B 802 (2020): 135198.
 
