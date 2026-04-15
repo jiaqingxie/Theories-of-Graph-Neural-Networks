@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/gnn-theory-map.svg" alt="Theories of Graph Neural Networks banner" width="100%">
+
 # Theories of Graph Neural Networks
 
 ### A curated reading map for GNN theory, expressivity, geometry, optimization, and scientific machine learning
@@ -8,6 +10,7 @@
 [![Last Update](https://img.shields.io/badge/updated-2026--04-0f766e)](#2024-2026-refresh)
 [![Papers](https://img.shields.io/badge/papers-300%2B-2563eb)](#reading-map)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-f97316)](#contributing)
+[![Focus](https://img.shields.io/badge/focus-theory%20%7C%20insights%20%7C%20open%20problems-111827)](#research-compass)
 
 **Maintained by Jiaqing Xie, Yuxin Wang, and Ziheng Chi.**
 
@@ -22,16 +25,92 @@ Unlike broad GNN survey lists, this reading map is organized around theory-first
 - **Generalization:** How do structural distances, graph limits, graphons, sample complexity, and invariance affect transfer?
 - **Scientific use:** How are graph representations used for PDEs, molecules, proteins, particle physics, geoscience, and cosmology?
 
+## Why This Repository
+
+Most GNN lists are useful for search, but less useful for deciding what to read next. This repository tries to be a **research compass**:
+
+- 🧭 **Find the right theory lens:** WL hierarchy, logic, spectral theory, graph limits, topology, equivariance, optimization, or scientific ML.
+- 🔬 **Understand what changed recently:** the 2024-2026 section tracks where the field moved after the first wave of expressivity results.
+- 🧩 **Connect theory to research ideas:** each theme below points to open problems that can become reading projects, paper ideas, or thesis directions.
+- 🧹 **Keep the list curated:** duplicate, weakly related, or purely application-only papers should be removed or moved to a secondary section.
+
 ## Reading Map
 
-- [2024-2026 Refresh](#2024-2026-refresh)
-- [General Theoretical GNN Surveys](#some-general-theoretical-gnn-surveys)
-- [Expressive Power: WL, Equivariance, Invariance](#expressive-power-of-graph-neural-networks-wl-test-equivariance-invariance)
-- [Geometric GNNs, Topology and Lie Groups](#geometric-graph-neural-networks-topology-and-lie-group)
-- [GNNs and Algorithms for NP-hard Problems](#graph-neural-networks--algorithms-on-solving-np-hard-problems)
-- [Spectral Graph Theory, Laplacians and Combinatorial Optimization](#spectral-graph-theories-laplacian-approximations--combinatorial-optimization-with-gnn)
-- [Optimization, Gradient Descent and Error Bounds](#gradient-descent--error-bounds-on-graph-neural-networks-convexconcave)
-- [Graph Representation Learning in Natural Sciences](#graph-representation-learning-on-theoretical-natural-sciences)
+| Icon | Section | Best for |
+| --- | --- | --- |
+| 🚀 | [2024-2026 Refresh](#2024-2026-refresh) | Recent theory papers and fast-moving directions |
+| 🧭 | [Research Compass](#research-compass) | High-level insights, reading paths, and open problems |
+| 📚 | [General Theoretical GNN Surveys](#some-general-theoretical-gnn-surveys) | Getting oriented quickly |
+| 🧠 | [Expressive Power: WL, Equivariance, Invariance](#expressive-power-of-graph-neural-networks-wl-test-equivariance-invariance) | WL hierarchy, logic, counting, subgraphs |
+| 🌀 | [Geometric GNNs, Topology and Lie Groups](#geometric-graph-neural-networks-topology-and-lie-group) | Equivariance, topology, curvature, geometry |
+| 🧮 | [GNNs and Algorithms for NP-hard Problems](#graph-neural-networks--algorithms-on-solving-np-hard-problems) | SAT, TSP, CSP, MIP, reasoning |
+| 🌊 | [Spectral Graph Theory, Laplacians and Combinatorial Optimization](#spectral-graph-theories-laplacian-approximations--combinatorial-optimization-with-gnn) | Laplacians, graph filters, diffusion, optimization |
+| 📉 | [Optimization, Gradient Descent and Error Bounds](#gradient-descent--error-bounds-on-graph-neural-networks-convexconcave) | Training dynamics, convergence, bounds |
+| 🔭 | [Graph Representation Learning in Natural Sciences](#graph-representation-learning-on-theoretical-natural-sciences) | PDEs, molecules, proteins, HEP, geoscience, cosmology |
+
+## Research Compass
+
+### Theory Landscape
+
+```mermaid
+flowchart LR
+    A["MPNN / 1-WL baseline"] --> B["Higher-order and subgraph GNNs"]
+    A --> C["Spectral and positional methods"]
+    A --> D["Graph transformers"]
+    B --> E["Counting, logic, homomorphisms"]
+    C --> F["Long-range propagation and graph limits"]
+    D --> E
+    D --> F
+    E --> G["Generalization and sample complexity"]
+    F --> G
+    G --> H["Scientific ML: PDEs, molecules, physics"]
+    I["Oversmoothing / oversquashing"] --> F
+    J["Equivariance and topology"] --> H
+```
+
+### If You Are New to GNN Theory
+
+1. Start with **Xu et al. 2018** and **Barcelo et al. 2020** to understand the 1-WL/logical expressivity baseline.
+2. Read **Morris et al. 2021** and **Papp & Wattenhofer 2022** to compare higher-order, subgraph, and invariant architectures.
+3. Move to **graph transformers and spectral methods** once the WL hierarchy feels clear.
+4. Use the 2024-2026 section to see where the frontier has shifted: realized expressivity, sample complexity, graph limits, and long-range propagation.
+
+### Reading Trails
+
+| Goal | Trail |
+| --- | --- |
+| **Write a paper on expressivity** | 1-WL limits → higher-order GNNs → subgraph GNNs → homomorphism counting → realized expressivity |
+| **Understand graph transformers** | structural encodings → attention vs. message passing → MSO/logical expressivity → scalability limits |
+| **Work on oversquashing** | curvature view → resistance/rewiring view → memory/state-space view → task-level diagnostics |
+| **Bridge theory and science** | equivariance → geometric graph networks → operator learning/PDE solvers → stability and conservation |
+| **Study GNNs for algorithms** | neural SAT/TSP solvers → generalization failures → proof/logic limitations → solver-guided learning |
+
+### What Seems Hot in 2026
+
+| Direction | Why it matters | Research hook |
+| --- | --- | --- |
+| **Realized expressivity** | Worst-case expressivity does not always predict trained-model behavior. | Measure what a trained model actually separates, not only what it could separate. |
+| **Logic beyond WL** | Graph transformers and recurrent GNNs are now being characterized with richer logical languages. | Build architectures whose logical fragment is explicit and useful. |
+| **Expressivity vs. generalization** | More expressive models can overfit graph structure or fail transfer. | Find task-dependent sweet spots rather than universal stronger models. |
+| **Long-range bottlenecks** | Oversquashing is not just a curvature story. | Compare resistance, curvature, rewiring, memory, and spectral views under one benchmark. |
+| **Spectral and spatial unification** | Spectral methods are regaining attention through invariant/equivariant formulations. | Explain when spectral features help beyond positional encodings. |
+| **Scientific GNN theory** | PDE, molecular, and physics GNNs need stability, conservation, and symmetry guarantees. | Translate expressivity/generalization results to physical operators. |
+
+### Open Problems Worth Tracking
+
+- **Can we predict useful expressivity before training?** Current theory often gives upper/lower bounds, but practitioners need diagnostics that correlate with downstream behavior.
+- **When do graph transformers truly beat message passing?** The answer depends on positional encodings, graph size, attention sparsity, and the target logic.
+- **What is the right theory for dynamic and temporal graphs?** Static WL-style results do not fully capture time, causality, event streams, or continuous dynamics.
+- **Can oversquashing metrics become actionable design rules?** Curvature, effective resistance, commute time, and rewiring methods need clearer comparisons.
+- **How should theory treat generated or noisy graphs?** Many scientific and biological graphs are constructed from measurements rather than observed directly.
+- **Can GNN theory guide scientific foundation models?** Geometry, conservation laws, and operator learning are converging, but the theory is still fragmented.
+
+### What To Remove Or Move Later
+
+- Remove exact duplicate entries unless the second entry points to a substantially different journal version.
+- Move purely application papers without theoretical contribution to a separate `Applications.md`.
+- Prefer stable proceedings, DOI, OpenReview, arXiv, or author pages over temporary PDF mirrors.
+- Add short notes only for papers that change the conceptual map; avoid turning every entry into an annotated bibliography.
 
 ## 2024-2026 Refresh
 
@@ -217,9 +296,6 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 36. Joshi, Chaitanya K., et al. [On the expressive power of geometric graph neural networks.](https://arxiv.org/pdf/2301.09308) arXiv preprint arXiv:2301.09308 (2023).
 
 
-37. Balcilar, Muhammet, et al. [Analyzing the expressive power of graph neural networks in a spectral perspective.](https://hal-normandie-univ.archives-ouvertes.fr/hal-03135633/document) Proceedings of the International Conference on Learning Representations (ICLR). 2021.
-
-
 38. Xu, Keyulu, et al. [How powerful are graph neural networks?.](https://arxiv.org/pdf/1810.00826) arXiv preprint arXiv:1810.00826 (2018).
 
 
@@ -236,9 +312,6 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 
 
 43. Balcilar, Muhammet, et al. [Breaking the limits of message passing graph neural networks.](http://proceedings.mlr.press/v139/balcilar21a/balcilar21a.pdf) International Conference on Machine Learning. PMLR, 2021.
-
-
-44. Bouritsas, Giorgos, et al. [Improving graph neural network expressivity via subgraph isomorphism counting.](https://ieeexplore.ieee.org/iel7/34/4359286/09721082.pdf?casa_token=xImsEHd2j9YAAAAA:nN3egM4BulVgyNAaL-8UeVI61v8UBK1AoTuLbXdcN0F-S6BrxZAzILods4iRyPEZiPBn3miSj31_) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.1 (2022): 657-668.
 
 
 45. Papp, Pál András, et al. [DropGNN: Random dropouts increase the expressiveness of graph neural networks.](https://proceedings.neurips.cc/paper/2021/file/b8b2926bd27d4307569ad119b6025f94-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 21997-22009.
@@ -309,7 +382,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 67. Chen, Samantha, et al. [Weisfeiler-Lehman Meets Gromov-Wasserstein.](https://proceedings.mlr.press/v162/chen22o/chen22o.pdf) International Conference on Machine Learning. PMLR, 2022.
 
 
-68.  Puny, Omri, et al. [Beddar-Wiesing, Silvia, et al. "Weisfeiler--Lehman goes Dynamic: An Analysis of the Expressive Power of Graph Neural Networks for Attributed and Dynamic Graphs." arXiv preprint arXiv:2210.03990 (2022). for graph neural networks.](https://arxiv.org/pdf/2302.11556) arXiv preprint arXiv:2302.11556 (2023).
+68. Puny, Omri, et al. [Equivariant Polynomials for Graph Neural Networks.](https://proceedings.mlr.press/v202/puny23a.html) International Conference on Machine Learning. PMLR, 2023.
 
 
 69. Huang, Yinan, et al. [Boosting the Cycle Counting Power of Graph Neural Networks with I $^ 2$-GNNs.](https://arxiv.org/pdf/2210.13978) arXiv preprint arXiv:2210.13978 (2022).
@@ -338,11 +411,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 
 79. Dasoulas, Georgios. [Towards Expressive Graph Neural Networks: Theory, Algorithms, and Applications.](https://theses.hal.science/tel-03666690/document) Diss. Institut Polytechnique de Paris, 2022.
 
-80. Geerts, Floris, and Juan L. Reutter. [Expressiveness and approximation properties of graph neural networks.](https://arxiv.org/pdf/2204.04661) arXiv preprint arXiv:2204.04661 (2022).
-
 81. Lim, Derek, et al. [Sign and basis invariant networks for spectral graph representation learning.](https://arxiv.org/pdf/2202.13013) arXiv preprint arXiv:2202.13013 (2022).
-
-82. Morris, Christopher, et al. [Speqnets: Sparsity-aware permutation-equivariant graph networks.](https://proceedings.mlr.press/v162/morris22a/morris22a.pdf) International Conference on Machine Learning. PMLR, 2022.
 
 83. Kong, Lecheng, Yixin Chen, and Muhan Zhang. [Geodesic Graph Neural Network for Efficient Graph Representation Learning.](https://arxiv.org/pdf/2210.02636) arXiv preprint arXiv:2210.02636 (2022).
 
@@ -363,8 +432,6 @@ Many of the papers that bridges topology and equivariant graphNN that mentioned 
 
 
 6. Gagrani, Mukul, et al. [Neural Topological Ordering for Computation Graphs.](https://proceedings.neurips.cc/paper_files/paper/2022/file/6ef586bdf0af0b609b1d0386a3ce0e4b-Paper-Conference.pdf) Advances in Neural Information Processing Systems 35 (2022): 17327-17339.
-
-7. Dehmamy, Nima, Albert-László Barabási, and Rose Yu. [Understanding the representation power of graph neural networks in learning graph topology.](https://proceedings.neurips.cc/paper/2019/file/73bf6c41e241e28b89d0fb9e0c82f9ce-Paper.pdf) Advances in Neural Information Processing Systems 32 (2019).
 
 8. Ye, Xue, Fang Sun, and Shiming Xiang. [TREPH: A Plug-In Topological Layer for Graph Neural Networks.](https://www.mdpi.com/1099-4300/25/2/331/pdf) Entropy 25.2 (2023): 331.
 
@@ -472,8 +539,6 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 23. Wang, Wenxi, et al. [NeuroComb: Improving SAT Solving with Graph Neural Networks.](https://arxiv.org/pdf/2110.14053) arXiv preprint arXiv:2110.14053 (2021).
 
-24. Liu, Minghao, et al. [Can Graph Neural Networks Learn to Solve MaxSAT Problem?.](https://arxiv.org/pdf/2111.07568) arXiv preprint arXiv:2111.07568 (2021).
-
 25. Grötschla, Florian, Joël Mathys, and Roger Wattenhofer. [Learning Graph Algorithms With Recurrent Graph Neural Networks.](https://arxiv.org/pdf/2212.04934) arXiv preprint arXiv:2212.04934 (2022).
 
 26. Glorot, Xavier, et al. [Learning representations of logical formulae using graph neural networks.](https://grlearning.github.io/papers/58.pdf) Neural Information Processing Systems, Workshop on Graph Representation Learning. 2019.
@@ -558,9 +623,6 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 
 23. D'Inverno, Giuseppe Alessio, et al. [A new perspective on the approximation capability of GNNs.](https://arxiv.org/pdf/2106.08992) arXiv preprint arXiv:2106.08992 (2021).
-
-24. Balcilar, Muhammet, et al. [Analyzing the expressive power of graph neural networks in a spectral perspective.](https://hal-normandie-univ.archives-ouvertes.fr/hal-03135633/document) Proceedings of the International Conference on Learning Representations (ICLR). 2021.
-
 
 25. Bo, Deyu, et al. [A Survey on Spectral Graph Neural Networks.](https://arxiv.org/pdf/2302.05631) arXiv preprint arXiv:2302.05631 (2023).
 
@@ -886,15 +948,12 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 
 12. Koundal, Paras, Matthias Plum, and Julian Saffer. [Study of mass composition of cosmic rays with IceTop and IceCube.](https://arxiv.org/pdf/2107.09626) arXiv preprint arXiv:2107.09626 (2021).
 
-13. ...
+## Roadmap
 
+- Add a dedicated section on **energy-based GNNs**, graph diffusion, and score-based graph models.
+- Expand **spectral graph theory** with clearer separation between classical graph signal processing, learned Laplacians, and graph transformers with spectral encodings.
+- Add **neural SDE / stochastic dynamics on graphs**, especially for molecular dynamics and uncertainty-aware scientific simulation.
+- Split purely application-heavy material into a future `Applications.md` so the main README stays theory-first.
+- Add short curator notes to landmark papers so readers can understand why each paper matters.
 
-## TODO List:
-1. Energy based Graph Neural Networks (First Part)
-2. Finding more references on spectral graph theories with graph neural networks (Traditional Analysis + Learning Based Methods) in first part
-3. Add neural SDE (stochastic differential equation. e.g. Molecular Dynamics) solvers 12/10/2023
-
-
-
-
-This repo is going to be frequently updated. Some new theoretical papers will be added. Old papers or unimportant papers will be removed after careful considerations.
+This repository is intended to stay alive and opinionated. New theoretical papers will be added, while duplicated, broken-link, or weakly related entries will be removed after careful review.
