@@ -647,6 +647,57 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 # Graph Representation Learning on Theoretical Natural Sciences
 
+### Atomistic GNNs, Equivariant Potentials and Materials Foundation Models
+
+Atomistic graph models are one of the clearest places where GNN theory becomes physically testable: expressivity is not only graph distinction, but whether a model respects symmetry, predicts conservative forces, extrapolates across chemistry, and remains stable in long molecular dynamics rollouts.
+
+#### Why This Direction Matters
+
+- **Body-order expressivity:** SchNet-style pair messages, DimeNet/GemNet angular messages, ALIGNN line graphs, and MACE/ACE-style higher-body interactions give different ways to encode many-body physics.
+- **Equivariance as inductive bias:** PaiNN, NequIP, Allegro, MACE, Equiformer, SevenNet, and related models show how E(3)/SE(3) symmetry changes accuracy and sample efficiency.
+- **Foundation potentials:** CHGNet, M3GNet, MatterSim, ORB, GRACE, and GNoME-like pipelines push GNNs from molecule-level models toward universal materials simulation and discovery.
+- **Theory gap:** We still lack a unified theory connecting cutoff graphs, periodic boundary conditions, body order, equivariance, conservation, and transfer across chemical space.
+
+#### Landmark Atomistic Graph Models
+
+1. Schütt, Kristof, et al. [SchNet: A continuous-filter convolutional neural network for modeling quantum interactions.](https://proceedings.neurips.cc/paper_files/paper/2017/hash/303ed4c69846ab36c2904d3ba8573050-Abstract.html) NeurIPS 2017.
+2. Klicpera, Johannes, Janek Groß, and Stephan Günnemann. [Directional Message Passing for Molecular Graphs.](https://openreview.net/forum?id=B1eWbxStPH) ICLR 2020. (DimeNet)
+3. Klicpera, Johannes, Shankari Giri, Johannes T. Margraf, and Stephan Günnemann. [Fast and Uncertainty-Aware Directional Message Passing for Non-Equilibrium Molecules.](https://arxiv.org/abs/2011.14115) NeurIPS-W 2020. (DimeNet++)
+4. Gasteiger, Johannes, et al. [GemNet: Universal Directional Graph Neural Networks for Molecules.](https://proceedings.neurips.cc/paper/2021/hash/35cf8659cfcb13224cbd47863a34fc58-Abstract.html) NeurIPS 2021.
+5. Schütt, Kristof, Oliver Unke, and Michael Gastegger. [Equivariant Message Passing for the Prediction of Tensorial Properties and Molecular Spectra.](https://proceedings.mlr.press/v139/schutt21a.html) ICML 2021. (PaiNN)
+6. Batzner, Simon, et al. [E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials.](https://www.nature.com/articles/s41467-022-29939-5) Nature Communications 2022. (NequIP)
+7. Musaelian, Albert, et al. [Learning local equivariant representations for large-scale atomistic dynamics.](https://www.nature.com/articles/s41467-023-36329-y) Nature Communications 2023. (Allegro)
+8. Batatia, Ilyes, et al. [MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields.](https://proceedings.neurips.cc/paper_files/paper/2022/hash/4a36c3c51af11ed9f34615b81edb5bbc-Abstract-Conference.html) NeurIPS 2022.
+9. Choudhary, Kamal, and Brian DeCost. [Atomistic Line Graph Neural Network for improved materials property predictions.](https://www.nature.com/articles/s41524-021-00650-1) npj Computational Materials 2021. (ALIGNN)
+10. Chen, Chi, and Shyue Ping Ong. [A universal graph deep learning interatomic potential for the periodic table.](https://www.nature.com/articles/s43588-022-00349-3) Nature Computational Science 2022. (M3GNet)
+11. Deng, Bowen, et al. [CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling.](https://www.nature.com/articles/s42256-023-00716-3) Nature Machine Intelligence 2023.
+12. Liao, Yi-Lun, and Tess Smidt. [Equiformer: Equivariant Graph Attention Transformer for 3D Atomistic Graphs.](https://openreview.net/forum?id=KwmPfARgOTD) ICLR 2023.
+13. Liao, Yi-Lun, et al. [EquiformerV2: Improved Equivariant Transformer for Scaling to Higher-Degree Representations.](https://openreview.net/forum?id=mCOBKZmrzD) ICLR 2024.
+14. Merchant, Amil, et al. [Scaling deep learning for materials discovery.](https://www.nature.com/articles/s41586-023-06735-9) Nature 2023. (GNoME)
+15. Yang, Han, et al. [MatterSim: A deep learning atomistic model across elements, temperatures and pressures.](https://www.nature.com/articles/s41586-024-07171-z) Nature 2024.
+
+#### Matbench Discovery Model Watchlist
+
+The [Matbench Discovery](https://matbench-discovery.materialsproject.org/) leaderboard is a useful living benchmark for formation-energy ranking and stability prediction. Its model zoo should be treated as a watchlist rather than a static citation list, because entries and checkpoints change quickly.
+
+| Family | Models to track | Why it belongs here |
+| --- | --- | --- |
+| **Classical graph baselines** | [CGCNN](https://github.com/janosh/matbench-discovery/tree/main/models/cgcnn), [MEGNet](https://github.com/janosh/matbench-discovery/tree/main/models/megnet), [Wrenformer](https://github.com/janosh/matbench-discovery/tree/main/models/wrenformer), [Voronoi RF](https://github.com/janosh/matbench-discovery/tree/main/models/voronoi_rf) | Useful baselines for crystal graphs and materials property prediction. |
+| **Materials GNN potentials** | [ALIGNN](https://github.com/janosh/matbench-discovery/tree/main/models/alignn), [ALIGNN-FF](https://github.com/janosh/matbench-discovery/tree/main/models/alignn_ff), [M3GNet](https://github.com/janosh/matbench-discovery/tree/main/models/m3gnet), [CHGNet](https://github.com/janosh/matbench-discovery/tree/main/models/chgnet), [MACE](https://github.com/janosh/matbench-discovery/tree/main/models/mace) | Core graph MLIPs for crystals and inorganic materials. |
+| **Equivariant graph potentials** | [Allegro](https://github.com/janosh/matbench-discovery/tree/main/models/allegro), [NequIP](https://github.com/janosh/matbench-discovery/tree/main/models/nequip), [NequIX](https://github.com/janosh/matbench-discovery/tree/main/models/nequix), [SevenNet](https://github.com/janosh/matbench-discovery/tree/main/models/sevennet), [EquiformerV2](https://github.com/janosh/matbench-discovery/tree/main/models/eqV2), [EquiformerV3](https://github.com/janosh/matbench-discovery/tree/main/models/equiformer_v3) | Connect GNNs with E(3)-equivariance, tensor features, and scalable force fields. |
+| **Foundation MLIP frontier** | [MatterSim](https://github.com/janosh/matbench-discovery/tree/main/models/mattersim), [ORB](https://github.com/janosh/matbench-discovery/tree/main/models/orb), [PET](https://github.com/janosh/matbench-discovery/tree/main/models/pet), [GRACE](https://github.com/janosh/matbench-discovery/tree/main/models/grace), [GNoME](https://github.com/janosh/matbench-discovery/tree/main/models/gnome), [OMat24 / eSEN](https://github.com/janosh/matbench-discovery/tree/main/models/eSEN) | Modern large-scale universal potentials and discovery pipelines. |
+| **Emerging architectures** | [AlphaNet](https://github.com/janosh/matbench-discovery/tree/main/models/alphanet), [BOWSR](https://github.com/janosh/matbench-discovery/tree/main/models/bowsr), [DeepMD](https://github.com/janosh/matbench-discovery/tree/main/models/deepmd), [EquFlash](https://github.com/janosh/matbench-discovery/tree/main/models/equflash), [Equi-Norm](https://github.com/janosh/matbench-discovery/tree/main/models/eqnorm), [ESNet](https://github.com/janosh/matbench-discovery/tree/main/models/esnet), [HIENet](https://github.com/janosh/matbench-discovery/tree/main/models/hienet), [MatRIS](https://github.com/janosh/matbench-discovery/tree/main/models/matris), [TACE](https://github.com/janosh/matbench-discovery/tree/main/models/tace) | Good candidates for future curation once their theoretical contribution and benchmark behavior are clearer. |
+| **Language or composition-driven baselines** | [AlchemBERT](https://github.com/janosh/matbench-discovery/tree/main/models/alchembert) | Useful contrast point against explicitly graph-based atomistic models. |
+
+#### Research Questions Opened by Atomistic GNNs
+
+- **Body order vs. graph depth:** Can we formally compare many-body expansion order, message-passing depth, line graphs, and equivariant tensor products?
+- **Conservative forces:** Which GNN architectures guarantee forces are gradients of a scalar energy, and when does this matter empirically?
+- **Cutoff graph stability:** How do neighbor-list discontinuities, periodic boundary conditions, and cutoff radii affect continuity and transfer?
+- **Universal potential scaling:** Do foundation MLIPs obey scaling laws across elements, structures, and levels of theory?
+- **Benchmark leakage and robustness:** How should Matbench-style discovery benchmarks account for duplicate structures, relaxation protocols, and domain shift?
+- **Theory-to-simulation gap:** A model can rank stable crystals well but still fail long molecular dynamics rollouts; theory should explain both.
+
 
 ### Particle Physics
 Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-LivingReview/).
