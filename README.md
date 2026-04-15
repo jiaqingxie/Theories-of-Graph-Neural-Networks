@@ -11,6 +11,7 @@
 [![Papers](https://img.shields.io/badge/papers-300%2B-2563eb)](#reading-map)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-f97316)](#contributing)
 [![Focus](https://img.shields.io/badge/focus-theory%20%7C%20insights%20%7C%20open%20problems-111827)](#research-compass)
+[![Cite](https://img.shields.io/badge/cite-CITATION.cff-0f766e)](CITATION.cff)
 
 **Maintained by Jiaqing Xie, Yuxin Wang, and Ziheng Chi.**
 
@@ -24,6 +25,8 @@ Unlike broad GNN survey lists, this reading map is organized around theory-first
 - **Limits:** When do oversmoothing, oversquashing, random graph asymptotics, or logical barriers restrict GNNs?
 - **Generalization:** How do structural distances, graph limits, graphons, sample complexity, and invariance affect transfer?
 - **Scientific use:** How are graph representations used for PDEs, molecules, proteins, particle physics, geoscience, and cosmology?
+
+Quick links: [Contributing guide](CONTRIBUTING.md) · [Citation metadata](CITATION.cff) · [Future directions](#future-directions)
 
 ## Why This Repository
 
@@ -85,6 +88,17 @@ flowchart LR
 | **Work on oversquashing** | curvature view → resistance/rewiring view → memory/state-space view → task-level diagnostics |
 | **Bridge theory and science** | equivariance → geometric graph networks → operator learning/PDE solvers → stability and conservation |
 | **Study GNNs for algorithms** | neural SAT/TSP solvers → generalization failures → proof/logic limitations → solver-guided learning |
+
+### Landmark Papers With Curator Notes
+
+| Paper | Why it is a landmark |
+| --- | --- |
+| [How Powerful are Graph Neural Networks?](https://arxiv.org/abs/1810.00826) | Established the 1-WL lens that still anchors most expressivity discussions. |
+| [The Logical Expressiveness of Graph Neural Networks](https://hal.science/hal-03356968/document) | Connects GNN expressivity with finite-variable logic, making architectural limits more formal. |
+| [Weisfeiler and Leman Go Machine Learning](https://arxiv.org/abs/2112.09992) | A compact bridge between the WL hierarchy and modern graph representation learning. |
+| [A Theoretical Comparison of Graph Neural Network Extensions](https://proceedings.mlr.press/v162/papp22a.html) | Useful for deciding when higher-order, subgraph, or positional extensions are actually different. |
+| [Recipe for a General, Powerful, Scalable Graph Transformer](https://proceedings.neurips.cc/paper_files/paper/2022/hash/5d4834a159f1547b267a05a4e2b7cf5e-Abstract-Conference.html) | Representative of the modern graph transformer shift from local MPNNs to structural encodings. |
+| [MACE](https://proceedings.neurips.cc/paper_files/paper/2022/hash/4a36c3c51af11ed9f34615b81edb5bbc-Abstract-Conference.html) | Shows how equivariant message passing and many-body physics meet in practical interatomic potentials. |
 
 ### What Seems Hot in 2026
 
@@ -206,6 +220,8 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 - Fix a broken link or duplicate entry.
 - Move a paper into a better section if the theory contribution is clearer elsewhere.
 - Add a short note when a paper changes how we understand expressivity, generalization, oversquashing, or scientific GNNs.
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for the full inclusion criteria and suggested PR format.
 
 ### Some General Theoretical GNN Surveys
 

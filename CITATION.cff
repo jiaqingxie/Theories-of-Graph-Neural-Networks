@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If this repository helps your research, please cite it using the metadata below."
+title: "awesome-gnn-theory: A Curated Research Map for Graph Neural Network Theory"
+type: dataset
+authors:
+  - family-names: Xie
+    given-names: Jiaqing
+    email: jiaxie@student.ethz.ch
+  - family-names: Wang
+    given-names: Yuxin
+  - family-names: Chi
+    given-names: Ziheng
+repository-code: "https://github.com/jiaqingxie/awesome-gnn-theory"
+url: "https://github.com/jiaqingxie/awesome-gnn-theory"
+abstract: "A curated reading map for Graph Neural Network theory, including expressivity, Weisfeiler-Lehman hierarchy, graph transformers, oversquashing, graph foundation models, equivariant atomistic potentials, and scientific machine learning."
+keywords:
+  - graph neural networks
+  - GNN theory
+  - graph representation learning
+  - graph transformers
+  - geometric deep learning
+  - scientific machine learning
+date-released: 2026-04-15
