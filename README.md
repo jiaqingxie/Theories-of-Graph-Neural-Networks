@@ -1,12 +1,102 @@
-# Awesome Collection of Graph Neural Network Theory Papers
+<div align="center">
 
-Important Mention: There's an important survey published in ICML 2024, So I will further classify those papers and add new papers according to the trends.
+# Theories of Graph Neural Networks
 
-Theoretical Foundations of Graph Neural Networks, Jiaqing Xie (ETH), Yuxin Wang (Fudan), Ziheng Chi (ETH)
+### A curated reading map for GNN theory, expressivity, geometry, optimization, and scientific machine learning
 
-This collection of Graph Neural Network (GNN) works distinguishes itself from other existing collections of GNN survey papers. It assists in crafting theoretical references related to GNNs and, more crucially, offers a more expansive viewpoint on the evolution of GNN theories, such as expressive power and SE(3) equivariant power, in the past few years.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Last Update](https://img.shields.io/badge/updated-2026--04-0f766e)](#2024-2026-refresh)
+[![Papers](https://img.shields.io/badge/papers-300%2B-2563eb)](#reading-map)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-f97316)](#contributing)
 
-In the second part, using domain graph neural networks to explain important natural science theories such as PDE, biochemistry are included. Ultimately we won't consider any social science relateds networks.  
+**Maintained by Jiaqing Xie, Yuxin Wang, and Ziheng Chi.**
+
+</div>
+
+This repository collects theoretical references for Graph Neural Networks (GNNs), with an emphasis on what different graph architectures can express, when they generalize, how geometry and topology change message passing, and how GNNs interact with scientific computing.
+
+Unlike broad GNN survey lists, this reading map is organized around theory-first questions:
+
+- **Expressivity:** What can MPNNs, higher-order GNNs, graph transformers, spectral models, and equivariant models distinguish or count?
+- **Limits:** When do oversmoothing, oversquashing, random graph asymptotics, or logical barriers restrict GNNs?
+- **Generalization:** How do structural distances, graph limits, graphons, sample complexity, and invariance affect transfer?
+- **Scientific use:** How are graph representations used for PDEs, molecules, proteins, particle physics, geoscience, and cosmology?
+
+## Reading Map
+
+- [2024-2026 Refresh](#2024-2026-refresh)
+- [General Theoretical GNN Surveys](#some-general-theoretical-gnn-surveys)
+- [Expressive Power: WL, Equivariance, Invariance](#expressive-power-of-graph-neural-networks-wl-test-equivariance-invariance)
+- [Geometric GNNs, Topology and Lie Groups](#geometric-graph-neural-networks-topology-and-lie-group)
+- [GNNs and Algorithms for NP-hard Problems](#graph-neural-networks--algorithms-on-solving-np-hard-problems)
+- [Spectral Graph Theory, Laplacians and Combinatorial Optimization](#spectral-graph-theories-laplacian-approximations--combinatorial-optimization-with-gnn)
+- [Optimization, Gradient Descent and Error Bounds](#gradient-descent--error-bounds-on-graph-neural-networks-convexconcave)
+- [Graph Representation Learning in Natural Sciences](#graph-representation-learning-on-theoretical-natural-sciences)
+
+## 2024-2026 Refresh
+
+Theoretical GNN research has moved quickly since 2023. This section highlights recent papers that are especially useful for updating the mental map of the field.
+
+### Expressivity, Logic and Counting
+
+1. Zhang, Bohang, et al. [Beyond Weisfeiler-Lehman: A Quantitative Framework for GNN Expressiveness.](https://openreview.net/forum?id=HSKaGOi7Ar) ICLR 2024 Oral.
+2. Wang, Yanbo, and Muhan Zhang. [An Empirical Study of Realized GNN Expressiveness.](https://openreview.net/forum?id=WIaZFk02fI) ICML 2024.
+3. Adam-Day, Sam, et al. [Almost Surely Asymptotically Constant Graph Neural Networks.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e1cd1db6fcd4a6df8618259f5b9cca0f-Abstract-Conference.html) NeurIPS 2024.
+4. Ahvonen, Veeti, et al. [Logical Characterizations of Recurrent Graph Neural Networks with Reals and Floats.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/bca7a9a0dd85e2a68420e5cae27eccfb-Abstract-Conference.html) NeurIPS 2024.
+5. Barlag, Timon, et al. [Graph Neural Networks and Arithmetic Circuits.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/09bf6a87e80d099cf17c6347301c6120-Abstract-Conference.html) NeurIPS 2024.
+6. Maehara, Takanori, and Hoang NT. [Deep Homomorphism Networks.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/65f54fdf62cd5614dc5715ae7ece4ef6-Abstract-Conference.html) NeurIPS 2024.
+7. Paolino, Raffaele, et al. [Weisfeiler and Leman Go Loopy: A New Hierarchy for Graph Representational Learning.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/dad28e90cd2c8caedf362d49c4d99e70-Abstract-Conference.html) NeurIPS 2024.
+8. Pellizzoni, Paolo, Till Hendrik Schulz, and Karsten Borgwardt. [Graph Neural Networks Can (Often) Count Substructures.](https://openreview.net/forum?id=sZQRUrvLn4) ICLR 2025 Spotlight.
+9. Gai, Jingchu, et al. [Homomorphism Expressivity of Spectral Invariant Graph Neural Networks.](https://openreview.net/forum?id=rdv6yeMFpn) ICLR 2025 Oral.
+10. Xu, Tuo. [Towards a Complete Logical Framework for GNN Expressiveness.](https://openreview.net/forum?id=pqOjj90Vwp) ICLR 2025 Oral.
+11. Khalife, Sammy, and Josue Tonelli-Cueto. [Is Uniform Expressivity Too Restrictive? Towards Efficient Expressivity of GNNs.](https://openreview.net/forum?id=lsvGqR6OTf) ICLR 2025.
+12. Drucks, Tamara, and Mahito Sugiyama. [Graph Transformers Express Monadic Second-Order Logic.](https://openreview.net/forum?id=LdDBlizrqR) ICLR 2025 DeLTa Workshop.
+13. Eitan, Yam, et al. [On The Expressive Power of GNN Derivatives.](https://openreview.net/forum?id=Tvat33IDmK) ICLR 2026.
+14. Ito, Michael, Danai Koutra, and Jenna Wiens. [Canonical Tree Cover Neural Networks for Expressive and Invariant Graph Learning.](https://openreview.net/forum?id=yumDmlGCc9) ICLR 2026.
+
+### Generalization, Transferability and Graph Limits
+
+1. Pellizzoni, Paolo, et al. [On the Expressivity and Sample Complexity of Node-Individualized Graph Neural Networks.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/d978cd64d598bbaf6a2fff1d6864d601-Abstract-Conference.html) NeurIPS 2024.
+2. Li, Shouheng, et al. [Towards Bridging Generalization and Expressivity of Graph Neural Networks.](https://openreview.net/forum?id=BOQpRtI4F5) ICLR 2025.
+3. Rauchwerger, Levi, Stefanie Jegelka, and Ron Levie. [Generalization, Expressivity, and Universality of Graph Neural Networks on Attributed Graphs.](https://openreview.net/forum?id=qKgd7RaAem) ICLR 2025.
+4. Herbst, Daniel, and Stefanie Jegelka. [Higher-Order Graphon Neural Networks: Approximation and Cut Distance.](https://openreview.net/forum?id=SjufxrSOYd) ICLR 2025 Spotlight.
+5. Maskey, Sohir, et al. [Graph Representational Learning: When Does More Expressivity Hurt Generalization?](https://openreview.net/forum?id=C6vpifaZvU) ICLR 2026.
+6. Wang, Xiyuan, and Muhan Zhang. [Expressive Graph Neural Networks via Equivariant Use of Noise.](https://openreview.net/forum?id=2Je9Brp0pF) ICLR 2026 submission.
+
+### Graph Transformers, Spectral Models and Long-Range Propagation
+
+1. Muller, Luis, et al. [Towards Principled Graph Transformers.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e5419147e53eba322cf12aff266a66f2-Abstract-Conference.html) NeurIPS 2024.
+2. Geisler, Simon, et al. [Spatio-Spectral Graph Neural Networks.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/580c4ec4738ff61d5862a122cdf139b6-Abstract-Conference.html) NeurIPS 2024.
+3. Eliasof, Moshe, et al. [GRANOLA: Adaptive Normalization for Graph Neural Networks.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/a4c17d9b88eaefc9bdf7c656ffc8ce55-Abstract-Conference.html) NeurIPS 2024.
+4. Wang, Yuanqing, and Kyunghyun Cho. [Non-convolutional Graph Neural Networks.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/397271e11322fae8ba7f827c50ca8d9b-Abstract-Conference.html) NeurIPS 2024.
+5. Bamberger, Jacob, et al. [Bundle Neural Network for Message Diffusion on Graphs.](https://openreview.net/forum?id=scI9307PLG) ICLR 2025 Spotlight.
+6. Flora, James, et al. [The Expressive Power of k-Harmonic Distances for Message Passing Neural Networks.](https://openreview.net/forum?id=M80tKvKTY1) ICLR 2026 submission.
+
+### Oversmoothing, Oversquashing and Structural Bottlenecks
+
+1. Epping, Bastian, et al. [Graph Neural Networks Do Not Always Oversmooth.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5623c35f3ab5e2c72aeb3abce27dc28f-Abstract-Conference.html) NeurIPS 2024.
+2. Blayney, Hugh, et al. [gLSTM: Mitigating Over-Squashing by Increasing Storage Capacity.](https://openreview.net/forum?id=c4mXEOXlAL) ICLR 2026.
+3. Chen, Jialong, et al. [Rethinking the Gold Standard: Why Discrete Curvature Fails to Fully Capture Over-squashing in GNNs?](https://openreview.net/forum?id=QYtmqCoilk) ICLR 2026.
+4. Arnaiz-Rodriguez, Adrian, and Federico Errica. [Oversmoothing, "Oversquashing", Heterophily, Long-Range, and More: Demystifying Common Beliefs in Graph Machine Learning.](https://openreview.net/forum?id=Q3MisVkuTu) ICLR 2026.
+5. Miquel-Oliver, Bertran, et al. [Effective Resistance Rewiring: A Simple Topological Correction for Over-Squashing.](https://openreview.net/forum?id=thOIyY7WfW) ICLR 2026 GRaM Workshop.
+6. Mishra, Aryan, and Lizhen Lin. [Schreier-Coset Graph Rewiring.](https://openreview.net/forum?id=oysNtFbrBO) ICLR 2026 submission.
+
+### Algorithms, SAT and Optimization
+
+1. Peltonen, Saku, and Roger Wattenhofer. [On the Expressive Power of GNNs for Boolean Satisfiability.](https://openreview.net/forum?id=Q01JX3CuDx) ICLR 2026.
+2. Li, Ruizhe, Enming Liang, and Minghua Chen. [On the Universality and Complexity of GNN for Solving Second-order Cone Programs.](https://openreview.net/forum?id=wFttcDu6Fr) ICLR 2026.
+3. Yu, Youn-Yeol, et al. [PIORF: Physics-Informed Ollivier-Ricci Flow for Long-Range Interactions in Mesh Graph Neural Networks.](https://openreview.net/forum?id=qkBBHixPow) ICLR 2025.
+
+> Note: ICLR 2026 items are marked according to the OpenReview status available in April 2026; workshop/submission entries are useful but should be treated as less archival than conference papers.
+
+## Contributing
+
+Contributions are welcome. The most useful pull requests usually do one of the following:
+
+- Add a theory paper with venue/year and a stable link.
+- Fix a broken link or duplicate entry.
+- Move a paper into a better section if the theory contribution is clearer elsewhere.
+- Add a short note when a paper changes how we understand expressivity, generalization, oversquashing, or scientific GNNs.
 
 ### Some General Theoretical GNN Surveys
 
@@ -19,7 +109,7 @@ In the second part, using domain graph neural networks to explain important natu
 4. Buffelli, Davide. [Improving the Effectiveness of Graph Neural Networks in Practical Scenarios.](https://www.research.unipd.it/bitstream/11577/3472978/2/thesis_pdfa.pdf) (2023).
 
 
-55. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
+5. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
 
 6. Khoshraftar, Shima, and Aijun An. [A survey on graph representation learning methods.](https://arxiv.org/pdf/2204.01855) arXiv preprint arXiv:2204.01855 (2022).
 
@@ -312,7 +402,7 @@ Many of the papers that bridges topology and equivariant graphNN that mentioned 
 
 25. Satorras, Vıctor Garcia, Emiel Hoogeboom, and Max Welling. [E (n) equivariant graph neural networks.](http://proceedings.mlr.press/v139/satorras21a/satorras21a.pdf) International conference on machine learning. PMLR, 2021.
 
-*26. Stärk, Hannes, et al. [Equibind: Geometric deep learning for drug binding structure prediction.](https://proceedings.mlr.press/v162/stark22b/stark22b.pdf) International Conference on Machine Learning. PMLR, 2022.
+26. Stärk, Hannes, et al. [Equibind: Geometric deep learning for drug binding structure prediction.](https://proceedings.mlr.press/v162/stark22b/stark22b.pdf) International Conference on Machine Learning. PMLR, 2022.
 
 27. Liu, Shengchao, et al. [Pre-training molecular graph representation with 3d geometry.](https://arxiv.org/pdf/2110.07728) arXiv preprint arXiv:2110.07728 (2021).
 
@@ -332,7 +422,7 @@ Many of the papers that bridges topology and equivariant graphNN that mentioned 
 
 
 ### Graph Neural Networks & Algorithms on solving NP-hard problems
-From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and coloring. May be overlapped with some of the spectral methods with aim of graph approximations.
+From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF, and coloring. This section may overlap with spectral methods that aim at graph approximations.
 
 1. Prates, Marcelo, et al. [Learning to solve np-complete problems: A graph neural network for decision tsp.](https://arxiv.org/pdf/1809.02721.pdf) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. No. 01. 2019.
 
@@ -418,7 +508,7 @@ From my observation, SAT is the most researhed topicm then TSP, CNF, DNF, and co
 
 41. Feldman, Or, et al. [Weisfeiler and leman go infinite: Spectral and combinatorial pre-colorings.](https://arxiv.org/pdf/2201.13410) arXiv preprint arXiv:2201.13410 (2022).
 
-### Spectral Graph Theories, Laplacian Approximations  & Combinatorical Optimization with GNN
+### Spectral Graph Theories, Laplacian Approximations & Combinatorial Optimization with GNN
 
 1. Cappart, Quentin, et al. [Combinatorial optimization and reasoning with graph neural networks.](https://arxiv.org/pdf/2102.09544.pdf) arXiv preprint arXiv:2102.09544 (2021).
 
@@ -756,7 +846,7 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 
 24. Jin, Guangyin, et al. [Spatio-Temporal Graph Neural Networks for Predictive Learning in Urban Computing: A Survey.](https://ieeexplore.ieee.org/iel7/9148594/9158408/09158447.pdf?casa_token=7EtPBQFruZwAAAAA:WfsfDg1S8hz8Fi7Gz3Vo3fYeyn3fLQExm19te2r29jTZCCrGATNfj8wLMl1lB8NwgVk2faXCUWyx) arXiv preprint arXiv:2303.14483 (2023).
 
-25. Chang, Buru, et al. [Learning graph-based geographical latent representation for point-of-interest recommendation.]() Proceedings of the 29th ACM International conference on information & knowledge management. 2020.
+25. Chang, Buru, et al. [Learning graph-based geographical latent representation for point-of-interest recommendation.](https://doi.org/10.1145/3340531.3411905) Proceedings of the 29th ACM International conference on information & knowledge management. 2020.
 
 
 26. Tulczyjew, Lukasz, et al. [Graph neural networks extract high-resolution cultivated land maps from Sentinel-2 image series.](https://ieeexplore.ieee.org/iel7/8859/4357975/09803235.pdf?casa_token=A9ZTO7OusIAAAAAA:bsMXJ60tGmvxD24GKIqUUz4s4CnZvRXiiRNkW7yrIL4QRnNsPReWjpJuJJ6YAadNHBX3c6i6BlIk) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
