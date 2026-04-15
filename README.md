@@ -46,6 +46,7 @@ Most GNN lists are useful for search, but less useful for deciding what to read 
 | 🧮 | [GNNs and Algorithms for NP-hard Problems](#graph-neural-networks--algorithms-on-solving-np-hard-problems) | SAT, TSP, CSP, MIP, reasoning |
 | 🌊 | [Spectral Graph Theory, Laplacians and Combinatorial Optimization](#spectral-graph-theories-laplacian-approximations--combinatorial-optimization-with-gnn) | Laplacians, graph filters, diffusion, optimization |
 | 📉 | [Optimization, Gradient Descent and Error Bounds](#gradient-descent--error-bounds-on-graph-neural-networks-convexconcave) | Training dynamics, convergence, bounds |
+| ⚛️ | [Atomistic GNNs and Materials Foundation Models](#atomistic-gnns-equivariant-potentials-and-materials-foundation-models) | ML potentials, equivariance, Matbench Discovery |
 | 🔭 | [Graph Representation Learning in Natural Sciences](#graph-representation-learning-on-theoretical-natural-sciences) | PDEs, molecules, proteins, HEP, geoscience, cosmology |
 
 ## Research Compass
@@ -95,6 +96,7 @@ flowchart LR
 | **Long-range bottlenecks** | Oversquashing is not just a curvature story. | Compare resistance, curvature, rewiring, memory, and spectral views under one benchmark. |
 | **Spectral and spatial unification** | Spectral methods are regaining attention through invariant/equivariant formulations. | Explain when spectral features help beyond positional encodings. |
 | **Scientific GNN theory** | PDE, molecular, and physics GNNs need stability, conservation, and symmetry guarantees. | Translate expressivity/generalization results to physical operators. |
+| **Graph foundation models** | Pretraining, graph-tokenization, and LLM-on-graphs are becoming a separate theory frontier. | Define what transfers across graph domains and what benchmark tasks actually test. |
 
 ### Open Problems Worth Tracking
 
@@ -166,6 +168,34 @@ Theoretical GNN research has moved quickly since 2023. This section highlights r
 2. Li, Ruizhe, Enming Liang, and Minghua Chen. [On the Universality and Complexity of GNN for Solving Second-order Cone Programs.](https://openreview.net/forum?id=wFttcDu6Fr) ICLR 2026.
 3. Yu, Youn-Yeol, et al. [PIORF: Physics-Informed Ollivier-Ricci Flow for Long-Range Interactions in Mesh Graph Neural Networks.](https://openreview.net/forum?id=qkBBHixPow) ICLR 2025.
 
+### Dynamic Graphs, Temporal Models and State Spaces
+
+1. Karmim, Yannis, et al. [Supra-Laplacian Encoding for Transformer on Dynamic Graphs.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/1ed4723f12853cbd02aecb8160f5e0c9-Abstract-Conference.html) NeurIPS 2024.
+2. Li, Jintang, et al. [State Space Models on Temporal Graphs: A First-Principles Study.](https://papers.nips.cc/paper_files/paper/2024/hash/e5ba3d6d93213db6b1d1931c6517fe1a-Abstract-Conference.html) NeurIPS 2024.
+3. Heeg, Franziska, and Ingo Scholtes. [Using Time-Aware Graph Neural Networks to Predict Temporal Centralities in Dynamic Graphs.](https://nips.cc/virtual/2024/poster/96499) NeurIPS 2024.
+4. Zhang, Guibin, et al. [Rationalizing and Augmenting Dynamic Graph Neural Networks.](https://proceedings.iclr.cc/paper_files/paper/2025/hash/c78b7a0016da6bf5be2a0691c17943ee-Abstract-Conference.html) ICLR 2025.
+5. Yu, Xingtong, et al. [Node-Time Conditional Prompt Learning in Dynamic Graphs.](https://proceedings.iclr.cc/paper_files/paper/2025/hash/f342338902ea2d8aaf3af94b941ebba6-Abstract-Conference.html) ICLR 2025.
+6. Zhang, Zeyang, et al. [Dynamic Graph Neural Networks Under Spatio-Temporal Distribution Shift.](https://proceedings.neurips.cc/paper_files/paper/2022/hash/2857242c9e97de339ce642e75b15ff24-Abstract-Conference.html) NeurIPS 2022.
+
+> Research angle: temporal graph theory should not simply append sequence models to static GNNs. The key questions are what the right temporal symmetry is, whether time-respecting paths replace static graph distances, and how graph transformers or state-space models preserve both structure and causality.
+
+### Graph Foundation Models, Tokenization and Evaluation
+
+1. Liu, Zemin, et al. [Graph Foundation Models: Concepts, Opportunities and Challenges.](https://arxiv.org/abs/2310.11829) arXiv preprint arXiv:2310.11829 (2023).
+2. Mao, Haitao, et al. [Graph Foundation Models.](https://arxiv.org/abs/2505.15116) arXiv preprint arXiv:2505.15116 (2025).
+3. Xia, Lianghao, Ben Kao, and Chao Huang. [OpenGraph: Towards Open Graph Foundation Models.](https://arxiv.org/abs/2403.01121) EMNLP 2024.
+4. Zhao, Jianan, et al. [GraphAny: A Foundation Model for Node Classification on Any Graph.](https://openreview.net/forum?id=LEiim1hFeW) CoRR 2024.
+5. Xu, Yuhao, et al. [GraphFM: A Comprehensive Benchmark for Graph Foundation Model.](https://arxiv.org/abs/2406.08310) arXiv preprint arXiv:2406.08310 (2024).
+6. Huang, Yinan, et al. [Towards Graph Foundation Models: Learning Generalities Across Graphs via Task-Trees.](https://openreview.net/forum?id=rtxGJH2lOm) ICLR 2025.
+7. Tang, Jiabin, et al. [GraphArena: Evaluating and Exploring Large Language Models on Graph Computation.](https://openreview.net/forum?id=Y1r9yCMzeA) ICLR 2025.
+8. Zhao, Jianan, et al. [Graph Tokenization for Bridging Graphs and Transformers.](https://openreview.net/forum?id=Vfz5F7LILF) ICLR 2026.
+9. Li, Yeqing, et al. [RAG4GFM: A Retrieval-Augmented Framework for Graph Foundation Models.](https://openreview.net/forum?id=NyPg0RL34m) ICLR 2026.
+10. Zhang, Shichang, et al. [GraphOmni: A Comprehensive and Extensible Benchmark Framework for Large Language Models on Graph-theoretic Tasks.](https://openreview.net/forum?id=qIXzJ3hYgJ) ICLR 2026.
+11. Wang, Yiqing, et al. [GRAVER: Generating Topology and Feature Variations for Robust Graph Foundation Models.](https://openreview.net/forum?id=L0Ts06x7P8) ICLR 2026.
+12. Xia, Lianghao, et al. [UniGTE: Unified Graph-Text Encoding for Text-attributed Graphs.](https://openreview.net/forum?id=LOH2WQ5LA6) NeurIPS 2025.
+
+> Research angle: graph foundation models need theory beyond single-dataset expressivity. Useful questions include what graph statistics survive tokenization, when pretraining transfers across graph families, and whether graph benchmarks test reasoning, retrieval, memorization, or structural generalization.
+
 > Note: ICLR 2026 items are marked according to the OpenReview status available in April 2026; workshop/submission entries are useful but should be treated as less archival than conference papers.
 
 ## Contributing
@@ -179,7 +209,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 
 ### Some General Theoretical GNN Surveys
 
-1. Zhou, Yu, et al. [Graph neural networks: Taxonomy, advances, and trends.](https://dl.acm.org/doi/full/10.1145/3495161?casa_token=wnutK67-_XQAAAAA:lMyEyQ2PckAAPoQX5V3hfF6lyxFoLjLhFjEH387d8ukre5fAn2w0pBLjREG4yqd2QEtD9Xd_VsMl76o) ACM Transactions on Intelligent Systems and Technology (TIST) 13.1 (2022): 1-54.
+1. Zhou, Yu, et al. [Graph neural networks: Taxonomy, advances, and trends.](https://dl.acm.org/doi/full/10.1145/3495161) ACM Transactions on Intelligent Systems and Technology (TIST) 13.1 (2022): 1-54.
 
 2. Liao, Renjie. [Deep Learning on Graphs: Theory, Models, Algorithms and Applications.](https://dam-oclc.bac-lac.gc.ca/download?is_thesis=1&oclc_number=1334506861&id=353a2bc9-9702-4aff-96e6-419d14993f74&fileName=Liao_Renjie_202106_PhD_thesis.pdf) University of Toronto (Canada), 2021.
 
@@ -188,7 +218,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 4. Buffelli, Davide. [Improving the Effectiveness of Graph Neural Networks in Practical Scenarios.](https://www.research.unipd.it/bitstream/11577/3472978/2/thesis_pdfa.pdf) (2023).
 
 
-5. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf?casa_token=4PmyoZmRbbIAAAAA:_zoL60_ANI70lDasuiqaf8yT0kIWs4YLU5CQH6cl3Krj2ce3XyUir5qlG-1SUGTtegHSRP5nyOOG) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
+5. Yuan, Hao, et al. [Explainability in graph neural networks: A taxonomic survey.](https://ieeexplore.ieee.org/iel7/34/4359286/09875989.pdf) IEEE Transactions on Pattern Analysis and Machine Intelligence (2022).
 
 6. Khoshraftar, Shima, and Aijun An. [A survey on graph representation learning methods.](https://arxiv.org/pdf/2204.01855) arXiv preprint arXiv:2204.01855 (2022).
 
@@ -206,7 +236,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 5. Bodnar, Cristian, et al. [Weisfeiler and lehman go cellular: Cw networks.](https://proceedings.neurips.cc/paper/2021/file/157792e4abb490f99dbd738483e0d2d4-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 2625-2640.
 
 
-6. Bouritsas, Giorgos, et al. [Improving graph neural network expressivity via subgraph isomorphism counting.](https://ieeexplore.ieee.org/iel7/34/4359286/09721082.pdf?casa_token=VNIJNDkJyVsAAAAA:32T2nnL6OE9OKx9syJOjRN2-rxGOVfLIE1Rto_p64TfCqCYCC5EL8YOIoIFTPTo9GfwomA03yAUk) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.1 (2022): 657-668.
+6. Bouritsas, Giorgos, et al. [Improving graph neural network expressivity via subgraph isomorphism counting.](https://ieeexplore.ieee.org/iel7/34/4359286/09721082.pdf) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.1 (2022): 657-668.
 
 
 7. Frasca, Fabrizio, et al. [Understanding and extending subgraph gnns by rethinking their symmetries.](https://proceedings.neurips.cc/paper_files/paper/2022/file/cb2a4cc70db72ea779abd01107782c7b-Paper-Conference.pdf) Advances in Neural Information Processing Systems 35 (2022): 31376-31390.
@@ -237,7 +267,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 16. Chen, Lei, Zhengdao Chen, and Joan Bruna. [On graph neural networks versus graph-augmented mlps.](https://arxiv.org/pdf/2010.15116) arXiv preprint arXiv:2010.15116 (2020).
 
 
-17. Long, Qingqing, et al. [Theoretically improving graph neural networks via anonymous walk graph kernels.](https://dl.acm.org/doi/pdf/10.1145/3442381.3449951?casa_token=xBCQjgw4Z_EAAAAA:Vkei7a3URmkPTsYt5eoBhlTswvUS-17Gr6Dpqt40u6RX7_au8zzh_zWGdH32OYJG7dwh8aX4EoT3kFU) Proceedings of the Web Conference 2021. 2021.
+17. Long, Qingqing, et al. [Theoretically improving graph neural networks via anonymous walk graph kernels.](https://dl.acm.org/doi/pdf/10.1145/3442381.3449951) Proceedings of the Web Conference 2021. 2021.
 
 
 18. Dash, Tirtharaj, Ashwin Srinivasan, and Lovekesh Vig. [Incorporating symbolic domain knowledge into graph neural networks.](https://link.springer.com/article/10.1007/s10994-021-05966-z) Machine Learning 110.7 (2021): 1609-1636.
@@ -249,13 +279,13 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 20. Maehara, Takanori, and Hoang NT. [Learning on random balls is sufficient for estimating (some) graph parameters.](https://proceedings.neurips.cc/paper/2021/file/08f36fcf88c0a84c19a6ed437b9cbcc9-Paper.pdf) Advances in Neural Information Processing Systems 34 (2021): 1126-1141.
 
 
-21. Wang, Hanchen, et al. [Neural Subgraph Counting with Wasserstein Estimator.](https://dl.acm.org/doi/pdf/10.1145/3514221.3526163?casa_token=JcZZTe9C7N4AAAAA:RoOx0OjbDyUV0QAuLiikn0dn2mBF-jbkVlDd_kplGyTF1PZ8GScEgi2iPyOUW_GJtqR-dX_Uc64i1wY)Proceedings of the 2022 International Conference on Management of Data. 2022.
+21. Wang, Hanchen, et al. [Neural Subgraph Counting with Wasserstein Estimator.](https://dl.acm.org/doi/pdf/10.1145/3514221.3526163) Proceedings of the 2022 International Conference on Management of Data. 2022.
 
 
-22. Zopf, Markus. [1-wl expressiveness is (almost) all you need.](https://ieeexplore.ieee.org/iel7/9891857/9889787/09892655.pdf?casa_token=5_mM3WQIkGkAAAAA:RQTTmfE01mZmeBm46VajJ5BpUHM3JwRE2EGwbbBWKYtZq3eOWTPo1USM8EhXTtPln82las2baNEH) 2022 International Joint Conference on Neural Networks (IJCNN). IEEE, 2022.
+22. Zopf, Markus. [1-wl expressiveness is (almost) all you need.](https://ieeexplore.ieee.org/iel7/9891857/9889787/09892655.pdf) 2022 International Joint Conference on Neural Networks (IJCNN). IEEE, 2022.
 
 
-23. Yang, Mingqi, et al. [Breaking the expression bottleneck of graph neural networks.](https://ieeexplore.ieee.org/iel7/69/4358933/09759979.pdf?casa_token=4Rwcz_1CLtoAAAAA:tHV_d088q2NWfRb517eUeq2OQ6XB0a99lGg2gxlYe8Zsic97u9BAb9xqZx-2i3LilF7l5wL0y9t2) IEEE Transactions on Knowledge and Data Engineering (2022).
+23. Yang, Mingqi, et al. [Breaking the expression bottleneck of graph neural networks.](https://ieeexplore.ieee.org/iel7/69/4358933/09759979.pdf) IEEE Transactions on Knowledge and Data Engineering (2022).
 
 
 24. Bianchi, Filippo Maria, and Veronica Lachi. [The expressive power of pooling in Graph Neural Networks.](https://arxiv.org/pdf/2304.01575) arXiv preprint arXiv:2304.01575 (2023).
@@ -267,7 +297,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 26. Liu, Linfeng, et al. [Towards Accurate Subgraph Similarity Computation via Neural Graph Pruning.](https://arxiv.org/pdf/2210.10643) arXiv preprint arXiv:2210.10643 (2022).
 
 
-27. Xia, Wenwen, Yuchen Li, and Shenghong Li. [On the Substructure Countability of Graph Neural Networks.](https://ieeexplore.ieee.org/iel7/69/4358933/09961144.pdf?casa_token=WlqXB0BXtgEAAAAA:dOrrBZeIjw75i2xnTH8E_kSSwgjWUS5Nf2pZizn9ZA0brdcAoHC4-GxtaJJkWznMt3aUh4gJPEI5) IEEE Transactions on Knowledge and Data Engineering (2022).
+27. Xia, Wenwen, Yuchen Li, and Shenghong Li. [On the Substructure Countability of Graph Neural Networks.](https://ieeexplore.ieee.org/iel7/69/4358933/09961144.pdf) IEEE Transactions on Knowledge and Data Engineering (2022).
 
 
 28. Beddar-Wiesing, Silvia, et al. [Weisfeiler--Lehman goes Dynamic: An Analysis of the Expressive Power of Graph Neural Networks for Attributed and Dynamic Graphs.](https://arxiv.org/pdf/2210.03990) arXiv preprint arXiv:2210.03990 (2022).
@@ -279,7 +309,7 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 30. Fang, Zhongxi, et al. [Wasserstein Graph Distance based on $ L_1 $-Approximated Tree Edit Distance between Weisfeiler-Lehman Subtrees.](https://arxiv.org/pdf/2207.04216) arXiv preprint arXiv:2207.04216 (2022).
 
 
-31. Imaduwage, Sarith, P. P. N. V. Kumara, and W. J. Samaraweera. [The Mismatch between Graph Neural Networks’ Expressivity and Propagation Graphs in Fake News Detection.](https://ieeexplore.ieee.org/iel7/9900505/9900509/09900611.pdf?casa_token=nGYkd2AQtjYAAAAA:YDufZYwmiaLDYuXN8CXXyPU3naSBajuD3j8L7qcrbBOPvVGvp0SDgXCpe3D9lVUktyBZeceXT3SE) 2022 IEEE/ACIS 7th International Conference on Big Data, Cloud Computing, and Data Science (BCD). IEEE, 2022.
+31. Imaduwage, Sarith, P. P. N. V. Kumara, and W. J. Samaraweera. [The Mismatch between Graph Neural Networks’ Expressivity and Propagation Graphs in Fake News Detection.](https://ieeexplore.ieee.org/iel7/9900505/9900509/09900611.pdf) 2022 IEEE/ACIS 7th International Conference on Big Data, Cloud Computing, and Data Science (BCD). IEEE, 2022.
 
 
 32. Murphy, Ryan L. [A Novel Framework for Invariant Neural Networks Applied to Graph and Set Data.](https://hammer.purdue.edu/ndownloader/files/27780936) Diss. Purdue University Graduate School, 2021.
@@ -419,13 +449,13 @@ Contributions are welcome. The most useful pull requests usually do one of the f
 
 Many of the papers that bridges topology and equivariant graphNN that mentioned above.
 
-1. Sahbi, Hichem. [Topologically-Consistent Magnitude Pruning for Very Lightweight Graph Convolutional Networks.](https://ieeexplore.ieee.org/document/9897899?denied=) 2022 IEEE International Conference on Image Processing (ICIP). IEEE, 2022.
+1. Sahbi, Hichem. [Topologically-Consistent Magnitude Pruning for Very Lightweight Graph Convolutional Networks.](https://ieeexplore.ieee.org/document/9897899) 2022 IEEE International Conference on Image Processing (ICIP). IEEE, 2022.
 
 2. Paolino, Raffaele, et al. [Unveiling the Sampling Density in Non-Uniform Geometric Graphs.](https://arxiv.org/pdf/2210.08219.pdf) arXiv preprint arXiv:2210.08219 (2022).
 
 3. Sahbi, Hichem. [Lightweight Graph Convolutional Networks with Topologically Consistent Magnitude Pruning.](https://arxiv.org/pdf/2203.13616.pdf) arXiv preprint arXiv:2203.13616 (2022).
 
-4. Feng, Fan, et al. [Community Channel-Net: Efficient channel-wise interactions via community graph topology.](https://www.sciencedirect.com/science/article/pii/S0031320323002364?casa_token=e_u4pwTRWtEAAAAA:7ndobj_IlridjrTekVfb8dCSTutommVNWdyrQ5lowg6WHVj7U-sy4GIOqh7PkvoAVMzboBJ2xYqO) Pattern Recognition 141 (2023): 109536.
+4. Feng, Fan, et al. [Community Channel-Net: Efficient channel-wise interactions via community graph topology.](https://www.sciencedirect.com/science/article/pii/S0031320323002364) Pattern Recognition 141 (2023): 109536.
 
 
 5. Dehmamy, Nima, Albert-László Barabási, and Rose Yu. [Understanding the representation power of graph neural networks in learning graph topology.](https://proceedings.neurips.cc/paper/2019/file/73bf6c41e241e28b89d0fb9e0c82f9ce-Paper.pdf) Advances in Neural Information Processing Systems 32 (2019).
@@ -497,7 +527,7 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 3. Xing, Zhihao, and Shikui Tu. [A graph neural network assisted monte carlo tree search approach to traveling salesman problem.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9109309) IEEE Access 8 (2020): 108418-108428. 
 
-4. Hu, Yujiao, et al. [A bidirectional graph neural network for traveling salesman problems on arbitrary symmetric graphs.](https://www.sciencedirect.com/science/article/pii/S0952197620303286?casa_token=ZKx0vZrQFfMAAAAA:4eGQeASYSx6wqvM10bZyt0nX9FsbDexYigpxpOJO7QLj_lNYVlyotlwwDi7p4ilcCIGRHRYr88rK) Engineering Applications of Artificial Intelligence 97 (2021): 104061.
+4. Hu, Yujiao, et al. [A bidirectional graph neural network for traveling salesman problems on arbitrary symmetric graphs.](https://www.sciencedirect.com/science/article/pii/S0952197620303286) Engineering Applications of Artificial Intelligence 97 (2021): 104061.
 
 5. Abboud, Ralph, Ismail Ceylan, and Thomas Lukasiewicz. [Learning to reason: Leveraging neural networks for approximate DNF counting.](https://ojs.aaai.org/index.php/AAAI/article/view/5705/5561) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 34. No. 04. 2020.
 
@@ -529,13 +559,13 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 18. Zhang, Lisa, et al. [Neural guided constraint logic programming for program synthesis.](https://proceedings.neurips.cc/paper/2018/file/67d16d00201083a2b118dd5128dd6f59-Paper.pdf) Advances in Neural Information Processing Systems 31 (2018).
 
-19. Abdelaziz, Ibrahim, et al. [Learning to guide a saturation-based theorem prover.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9669114&casa_token=uaofxFc5dUEAAAAA:zgqvtqcP8gxwPT_xmyxwoRfProT2EhPPc2vwQ_BNicsOEt22geofLCOlre8TKv_NIgIF0IMXm5Su) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.1 (2022): 738-751.
+19. Abdelaziz, Ibrahim, et al. [Learning to guide a saturation-based theorem prover.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9669114) IEEE Transactions on Pattern Analysis and Machine Intelligence 45.1 (2022): 738-751.
 
 20. Angelini, Maria Chiara, and Federico Ricci-Tersenghi. [Cracking nuts with a sledgehammer: when modern graph neural networks do worse than classical greedy algorithms.](https://arxiv.org/pdf/2206.13211) arXiv preprint arXiv:2206.13211 (2022).
 
 21. Tönshoff, Jan, et al. [One model, any CSP: Graph neural networks as fast global search heuristics for constraint satisfaction.](https://arxiv.org/pdf/2208.10227) arXiv preprint arXiv:2208.10227 (2022).
 
-22. Yang, Lei, and Lei Zou. [Noah: Neural-optimized A Search Algorithm for Graph Edit Distance Computation.](https://ieeexplore.ieee.org/iel7/9458599/9458600/09458863.pdf?casa_token=nwHBBJEdHXUAAAAA:IeLY-bojxj2mGYrWEVmb0gYxjKs-C4HMYQ19N2FWH-mpN09w9KzUZznWBbLqu6NQ_dDDeAmj3zO3) 2021 IEEE 37th International Conference on Data Engineering (ICDE). IEEE, 2021.
+22. Yang, Lei, and Lei Zou. [Noah: Neural-optimized A Search Algorithm for Graph Edit Distance Computation.](https://ieeexplore.ieee.org/iel7/9458599/9458600/09458863.pdf) 2021 IEEE 37th International Conference on Data Engineering (ICDE). IEEE, 2021.
 
 23. Wang, Wenxi, et al. [NeuroComb: Improving SAT Solving with Graph Neural Networks.](https://arxiv.org/pdf/2110.14053) arXiv preprint arXiv:2110.14053 (2021).
 
@@ -591,7 +621,7 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 8. Sun, Haoran, Etash K. Guha, and Hanjun Dai. [Annealed Training for Combinatorial Optimization on Graphs.](https://arxiv.org/pdf/2207.11542.pdf) arXiv preprint arXiv:2207.11542 (2022).
 
-9. Lee, Mengyuan, et al. [A fast graph neural network-based method for winner determination in multi-unit combinatorial auctions.](https://ieeexplore.ieee.org/abstract/document/9305731?casa_token=-UWqlkJx6L8AAAAA:s3eHHNJQMb532fF3ouyCKcs04p5_5QRPxu0AfvcIOk7frrPaQ8MFgdl4pVY3uzRIXF_JXDBKUvwu) IEEE Transactions on Cloud Computing 10.4 (2020): 2264-2280.
+9. Lee, Mengyuan, et al. [A fast graph neural network-based method for winner determination in multi-unit combinatorial auctions.](https://ieeexplore.ieee.org/abstract/document/9305731) IEEE Transactions on Cloud Computing 10.4 (2020): 2264-2280.
 
 10. Gatti, Alice, et al. [Graph Partitioning and Sparse Matrix Ordering using Reinforcement Learning and Graph Neural Networks.](https://www.jmlr.org/papers/volume23/21-0644/21-0644.pdf) Journal of Machine Learning Research 23.303 (2022): 1-28.
 
@@ -603,7 +633,7 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 14. Vesselinova, Natalia, et al. [Learning combinatorial optimization on graphs: A survey with applications to networking.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9125934) IEEE Access 8 (2020): 120388-120416.
 
-15. Drori, Iddo, et al. [Learning to solve combinatorial optimization problems on real-world graphs in linear time.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9356192&casa_token=Oi5pcBrVZXsAAAAA:tU7zH7gVr30gu9t-4Ake0J7kSSQPakVjGU6l-Z-GsNSOHFG9uYamA_2y08921AORYhF0wjptXHxO) 2020 19th IEEE International Conference on Machine Learning and Applications (ICMLA). IEEE, 2020.
+15. Drori, Iddo, et al. [Learning to solve combinatorial optimization problems on real-world graphs in linear time.](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9356192) 2020 19th IEEE International Conference on Machine Learning and Applications (ICMLA). IEEE, 2020.
 
 16. Luz, Ilay, et al. [Learning algebraic multigrid using graph neural networks.](http://proceedings.mlr.press/v119/luz20a/luz20a.pdf) International Conference on Machine Learning. PMLR, 2020.
 
@@ -616,7 +646,7 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 
 20. Khalil, Elias, et al. [Learning combinatorial optimization algorithms over graphs.](https://proceedings.neurips.cc/paper/2017/file/d9896106ca98d3d05b8cbdf4fd8b13a1-Paper.pdf) Advances in neural information processing systems 30 (2017).
 
-21. Schuetz, Martin JA, J. Kyle Brubaker, and Helmut G. Katzgraber. [Combinatorial optimization with physics-inspired graph neural networks.](https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s42256-022-00468-6&casa_token=zl7d4n7kUvwAAAAA:dSRgWyzdym4z_LMavvGfjdpoGZqhRd4FRtsNKV-uSz7DIlcgFofAY4GHLnIGIxLPOEpGAgMYe2-nup3AuBI) Nature Machine Intelligence 4.4 (2022): 367-377.
+21. Schuetz, Martin JA, J. Kyle Brubaker, and Helmut G. Katzgraber. [Combinatorial optimization with physics-inspired graph neural networks.](https://www.nature.com/articles/s42256-022-00468-6) Nature Machine Intelligence 4.4 (2022): 367-377.
 
 
 22. Chen, Ziang, et al. [On representing linear programs by graph neural networks.](https://arxiv.org/pdf/2209.12288) arXiv preprint arXiv:2209.12288 (2022).
@@ -645,7 +675,7 @@ From my observation, SAT is the most researched topic, followed by TSP, CNF, DNF
 7. Xu, Keyulu, et al. [Optimization of graph neural networks: Implicit acceleration by skip connections and more depth.](http://proceedings.mlr.press/v139/xu21k/xu21k.pdf) International Conference on Machine Learning. PMLR, 2021.
 
 
-# Graph Representation Learning on Theoretical Natural Sciences
+## Graph Representation Learning on Theoretical Natural Sciences
 
 ### Atomistic GNNs, Equivariant Potentials and Materials Foundation Models
 
@@ -710,7 +740,7 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 4. Abdughani, Murat, et al. [Probing stop pair production at the LHC with graph neural networks.](https://link.springer.com/content/pdf/10.1007/JHEP08(2019)055.pdf) Journal of High Energy Physics 2019.8 (2019): 1-14.
 
-5. Martínez, J. Arjona, et al. [Pileup mitigation at the Large Hadron Collider with graph neural networks.](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/content/pdf/10.1140/epjp/i2019-12710-3.pdf&casa_token=SP8PSdhh_CoAAAAA:HtQpQGe2oMSc4nwt0Y-l0KN1rR2p1X1cD-DKcQtHli8sZ6qoApfz6A_F86Bj0CTDd3IEglaaZMxi8CzJSQY) The European Physical Journal Plus 134.7 (2019): 333.
+5. Martínez, J. Arjona, et al. [Pileup mitigation at the Large Hadron Collider with graph neural networks.](https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/content/pdf/10.1140/epjp/i2019-12710-3.pdf) The European Physical Journal Plus 134.7 (2019): 333.
 
 6. Ren, Jie, Lei Wu, and Jin Min Yang. [Unveiling CP property of top-Higgs coupling with graph neural networks at the LHC.](https://www.sciencedirect.com/science/article/pii/S0370269320300022) Physics Letters B 802 (2020): 135198.
 
@@ -718,7 +748,7 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 8. Qasim, Shah Rukh, et al. [Learning representations of irregular particle-detector geometry with distance-weighted graph networks.](https://link.springer.com/article/10.1140/epjc/s10052-019-7113-9) The European Physical Journal C 79.7 (2019): 1-11.
 
-9. Chakraborty, Amit, et al. [Neural network-based top tagger with two-point energy correlations and geometry of soft emissions.](https://link.springer.com/article/10.1007/JHEP07(2020)111) Journal of High Energy Physics 2020.7 (2020): 1-47.
+9. Chakraborty, Amit, et al. [Neural network-based top tagger with two-point energy correlations and geometry of soft emissions.](https://doi.org/10.1007/JHEP07%282020%29111) Journal of High Energy Physics 2020.7 (2020): 1-47.
 
 10.  Abdughani, Murat, et al. [Probing the triple Higgs boson coupling with machine learning at the LHC.](https://link.aps.org/pdf/10.1103/PhysRevD.104.056003) Physical Review D 104.5 (2021): 056003.
 
@@ -734,7 +764,7 @@ Almost all the papers are from this [link](https://iml-wg.github.io/HEPML-Living
 
 16. Verma, Yogesh, and Satyajit Jena. [Particle Track Reconstruction using Geometric Deep Learning.](https://arxiv.org/pdf/2012.08515) arXiv preprint arXiv:2012.08515 (2020).
 
-17. Qian, Zhen, et al. [Vertex and energy reconstruction in JUNO with machine learning methods.](https://www.sciencedirect.com/science/article/pii/S016890022100512X?casa_token=iSHJwPiNg-QAAAAA:jkHR6CB7WxQ7ZuLN7TC7AYRIz_V1jM3Dy_-zwVaRuo9u_p2hPQv2BIkOvZXngWGF3Rhu5dRnPjlo) Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 1010 (2021): 165527.
+17. Qian, Zhen, et al. [Vertex and energy reconstruction in JUNO with machine learning methods.](https://www.sciencedirect.com/science/article/pii/S016890022100512X) Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 1010 (2021): 165527.
 
 18. Pata, Joosep, et al. [MLPF: efficient machine-learned particle-flow reconstruction using graph neural networks.](https://link.springer.com/article/10.1140/epjc/s10052-021-09158-w) The European Physical Journal C 81 (2021): 1-14.
 
@@ -843,7 +873,7 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 
 7. Di Giovanni, Francesco, et al. [Graph neural networks as gradient flows.](https://arxiv.org/pdf/2206.10991) arXiv preprint arXiv:2206.10991 (2022).
 
-8. Jin, Ming, et al. [Multivariate time series forecasting with dynamic graph neural ODEs.](https://ieeexplore.ieee.org/iel7/69/4358933/09950330.pdf?casa_token=XvAML47fTbwAAAAA:DZsuXIJ3q4vSMK4wEruzd6D7nSH-aZ9zUyKzhokuQeiYVYN7Pr9VLWsh2XEbGrg_uDN-gtGX9BJa) IEEE Transactions on Knowledge and Data Engineering (2022).
+8. Jin, Ming, et al. [Multivariate time series forecasting with dynamic graph neural ODEs.](https://ieeexplore.ieee.org/iel7/69/4358933/09950330.pdf) IEEE Transactions on Knowledge and Data Engineering (2022).
 
 9. Hadou, Samar, Charilaos I. Kanatsoulis, and Alejandro Ribeiro. [Space-time graph neural networks.](https://arxiv.org/pdf/2110.02880) arXiv preprint arXiv:2110.02880 (2021).
 
@@ -915,62 +945,58 @@ There are huge amounts of GNN works done in this domain. Here we extract some im
 
 2. Kuang, Ping, et al. [Landslide Displacement Prediction via Attentive Graph Neural Network.](https://www.mdpi.com/2072-4292/14/8/1919/pdf) Remote Sensing 14.8 (2022): 1919.
 
-3. Sun, Alexander Y., et al. [Explore Spatio‐Temporal Learning of Large Sample Hydrology Using Graph Neural Networks.](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021WR030394?casa_token=6p2Of4MKudwAAAAA:TzXaJlt500xkSi_pEgAoBKl2ZU-_3S3MAquL8N-HBy_ChoO7544cbV2XEDp7WDo7nkw1cz_Vg-e0Uy6E8A) Water Resources Research 57.12 (2021): e2021WR030394.
+3. Sun, Alexander Y., et al. [Explore Spatio‐Temporal Learning of Large Sample Hydrology Using Graph Neural Networks.](https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2021WR030394) Water Resources Research 57.12 (2021): e2021WR030394.
 
-4. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake phase association with graph neural networks.](https://pubs.geoscienceworld.org/ssa/bssa/article-pdf/doi/10.1785/0120220182/5764196/bssa-2022182.1.pdf?casa_token=DXulqT6Kr_QAAAAA:uiQ_xIur_9-0kXvK6Ds8zM_bJl2jxu7w81UxJkqXozPVR-fo1di7e17jFwFb8khYSMssXtyS) Bulletin of the Seismological Society of America 113.2 (2023): 524-547.
+4. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake phase association with graph neural networks.](https://pubs.geoscienceworld.org/ssa/bssa/article-pdf/doi/10.1785/0120220182/5764196/bssa-2022182.1.pdf) Bulletin of the Seismological Society of America 113.2 (2023): 524-547.
 
-5. Gong, Renbin, and Yanzi Yang. [Application of Graph Neural Network in Lithology Recognition.](https://ieeexplore.ieee.org/iel7/9885795/9885816/09885832.pdf?casa_token=t7J0StbmeoYAAAAA:Ql0m0LyU0amMEF34lQBlOLFlfJ9XvjQUNwFu2QdVObH9oArWGRb2Rk_cdMgAFbKg0agt3fX5otlQ) 2022 4th International Conference on Natural Language Processing (ICNLP). IEEE, 2022.
+5. Gong, Renbin, and Yanzi Yang. [Application of Graph Neural Network in Lithology Recognition.](https://ieeexplore.ieee.org/iel7/9885795/9885816/09885832.pdf) 2022 4th International Conference on Natural Language Processing (ICNLP). IEEE, 2022.
 
 6. Zhou, Fan, et al. [Land deformation prediction via slope-aware graph neural networks.](https://ojs.aaai.org/index.php/AAAI/article/download/17764/17571) Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 35. No. 17. 2021.
 
-7. Li, Rongfan, et al. [Mining Spatio-Temporal Relations via Self-Paced Graph Contrastive Learning.](https://dl.acm.org/doi/pdf/10.1145/3534678.3539422?casa_token=Ijq0k6zsBR4AAAAA:k6rzhXZpbEUy6oA6J16oc5lSeDram8OpuAXyvm9WNHqA4bAJP-gr74Er7VLqlVggpaIXOJT_XX01OAI) Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2022.
+7. Li, Rongfan, et al. [Mining Spatio-Temporal Relations via Self-Paced Graph Contrastive Learning.](https://dl.acm.org/doi/pdf/10.1145/3534678.3539422) Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2022.
 
 8. Li, Yun, et al. [Graph Neural Network for spatiotemporal data: methods and applications.](https://arxiv.org/pdf/2306.00012) arXiv preprint arXiv:2306.00012 (2023).
 
 9. Choi, Yongjin, and Krishna Kumar. [Graph Neural Network-based surrogate model for granular flows.](https://arxiv.org/pdf/2305.05218) arXiv preprint arXiv:2305.05218 (2023).
 
-10. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake location and magnitude estimation with graph neural networks.](https://ieeexplore.ieee.org/iel7/9897158/9897159/09897468.pdf?casa_token=lU6Q78jvbYgAAAAA:6QYpeORN5EtHhQVbXODzCkpoT4pkO73KDCAffk0jA2wpvmxit1XfYtM58O72bd8Tua0U8ItsbEHz) 2022 IEEE International Conference on Image Processing (ICIP). IEEE, 2022.
-
-11. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake phase association with graph neural networks.](https://pubs.geoscienceworld.org/ssa/bssa/article-pdf/doi/10.1785/0120220182/5764196/bssa-2022182.1.pdf?casa_token=aVlcJVz6ZU8AAAAA:p8nz1kBfoOH1_5BYty7uFaxz0pmVatR-75DGmHkUxpGkp-LIAblEyARWAQxnk1fcVCvLIrH3) Bulletin of the Seismological Society of America 113.2 (2023): 524-547.
+10. McBrearty, Ian W., and Gregory C. Beroza. [Earthquake location and magnitude estimation with graph neural networks.](https://ieeexplore.ieee.org/iel7/9897158/9897159/09897468.pdf) 2022 IEEE International Conference on Image Processing (ICIP). IEEE, 2022.
 
 12. Bloemheuvel, Stefan, et al. [Multivariate time series regression with graph neural networks.](https://arxiv.org/pdf/2201.00818) arXiv preprint arXiv:2201.00818 (2022).
 
 13. Bilal, Muhammad Atif, et al. [Early Earthquake Detection Using Batch Normalization Graph Convolutional Neural Network (BNGCNN).](https://www.mdpi.com/2076-3417/12/15/7548/pdf) Applied Sciences 12.15 (2022): 7548.
 
-14. Ruiz, Luana, Fernando Gama, and Alejandro Ribeiro. [Gated graph convolutional recurrent neural networks.](https://ieeexplore.ieee.org/iel7/8893974/8902336/08902995.pdf?casa_token=9a1aPY5i1qwAAAAA:kN2eCqQTZxcFHbVRvzNVsqXmSbu6OGpEDlIuGYyLbDO_xz3dR7ua0rDf8NXjplHNVdDPjHxUEkqr) 2019 27th European Signal Processing Conference (EUSIPCO). IEEE, 2019.
+14. Ruiz, Luana, Fernando Gama, and Alejandro Ribeiro. [Gated graph convolutional recurrent neural networks.](https://ieeexplore.ieee.org/iel7/8893974/8902336/08902995.pdf) 2019 27th European Signal Processing Conference (EUSIPCO). IEEE, 2019.
 
-15. Zhao, Wenzhi, et al. [Contextual-Aware Land Cover Classification with U-Shaped Object Graph Neural Network.](https://ieeexplore.ieee.org/iel7/8859/9651998/09781433.pdf?casa_token=QTVwoN3FyocAAAAA:wZdIcM5M-TPmcwe7xO79d2cQJy061bhCsO4BlSLz4uj6aA7burHjeiRNgVW49-Mfc9nN_mQWNc2N) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
+15. Zhao, Wenzhi, et al. [Contextual-Aware Land Cover Classification with U-Shaped Object Graph Neural Network.](https://ieeexplore.ieee.org/iel7/8859/9651998/09781433.pdf) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
 
-16. Zhou, Fan, et al. [Identifying user geolocation with Hierarchical Graph Neural Networks and explainable fusion.](https://www.sciencedirect.com/science/article/pii/S1566253521002293?casa_token=l1nNwi73DcoAAAAA:aMhRRlmcNaC3tXhmYxJcyouEs-vQXjtkyj7G-pigk7aNHOO9Or6BCCxpgWKnCEMG-IBH9QbV8l1I) Information Fusion 81 (2022): 1-13.
+16. Zhou, Fan, et al. [Identifying user geolocation with Hierarchical Graph Neural Networks and explainable fusion.](https://www.sciencedirect.com/science/article/pii/S1566253521002293) Information Fusion 81 (2022): 1-13.
 
-17. Jiang, Weiwei, and Jiayun Luo. [Graph neural network for traffic forecasting: A survey.](https://www.sciencedirect.com/science/article/pii/S0957417422011654?casa_token=e-AJI2pnoZQAAAAA:QucWHxAHPHT-GgHCes8cqdQEkrcC-7l0arDKG--pOxR5MR_BgVybRbG4YpHZxohMPRQiLw2YHykS) Expert Systems with Applications (2022): 117921.
+17. Jiang, Weiwei, and Jiayun Luo. [Graph neural network for traffic forecasting: A survey.](https://www.sciencedirect.com/science/article/pii/S0957417422011654) Expert Systems with Applications (2022): 117921.
 
-18. Wu, Ning, et al. [Learning effective road network representation with hierarchical graph neural networks.](https://dl.acm.org/doi/pdf/10.1145/3394486.3403043?casa_token=4nktNxSOLikAAAAA:XgroevKJg5vTPAhyMY8FJVEFRvWnCfRO7zFHLLBfGhImhLwdv1MTEGkD7lO-Vl08x0D8jpLpzfgh6tc) Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020.
+18. Wu, Ning, et al. [Learning effective road network representation with hierarchical graph neural networks.](https://dl.acm.org/doi/pdf/10.1145/3394486.3403043) Proceedings of the 26th ACM SIGKDD international conference on knowledge discovery & data mining. 2020.
 
-19. Peng, Hao, et al. [Spatial temporal incidence dynamic graph neural networks for traffic flow forecasting.](https://www.sciencedirect.com/science/article/pii/S0020025520300451?casa_token=tB-9F_UvbcMAAAAA:q6fvU-nNi1QJJr0I0ZVm8rkUK-M57le6eB20h2FGvR9TanmH85Yrwjx8vuRKrNmnuERljViVhrQX) Information Sciences 521 (2020): 277-290.
+19. Peng, Hao, et al. [Spatial temporal incidence dynamic graph neural networks for traffic flow forecasting.](https://www.sciencedirect.com/science/article/pii/S0020025520300451) Information Sciences 521 (2020): 277-290.
 
-20. Ma, Zhaorui, et al. [GWS-Geo: A graph neural network based model for street-level IPv6 geolocation.](https://www.sciencedirect.com/science/article/pii/S2214212623000959?casa_token=Vei8xcgZVVgAAAAA:JtSHE4wOtp8JTw60ALFZEveiEqwWL3ZLPbBFP-ZkwDZxoYejlTXeNtmM817evQKDAAzWnTzBcQEy) Journal of Information Security and Applications 75 (2023): 103511.
+20. Ma, Zhaorui, et al. [GWS-Geo: A graph neural network based model for street-level IPv6 geolocation.](https://www.sciencedirect.com/science/article/pii/S2214212623000959) Journal of Information Security and Applications 75 (2023): 103511.
 
 21. Sarlin, Paul-Edouard, et al. [Superglue: Learning feature matching with graph neural networks.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Sarlin_SuperGlue_Learning_Feature_Matching_With_Graph_Neural_Networks_CVPR_2020_paper.pdf) Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2020.
 
-22. Wang, Xiaoyang, et al. [Traffic flow prediction via spatial temporal graph neural network.](https://dl.acm.org/doi/pdf/10.1145/3366423.3380186?casa_token=lnGEI_wuN5IAAAAA:DEAyd_5HoMXC1YpH9Ba4oOX737sr6dg069OFJkI5TeOvavGsuHmdzYfeR5-ozCiagz-R6WaEXyidh0Y) Proceedings of the web conference 2020. 2020.
+22. Wang, Xiaoyang, et al. [Traffic flow prediction via spatial temporal graph neural network.](https://dl.acm.org/doi/pdf/10.1145/3366423.3380186) Proceedings of the web conference 2020. 2020.
 
-23. Zhang, Fang-Hao, and Zhi-Gang Shao. [ST-GRF: Spatiotemporal graph neural networks for rainfall forecasting.](https://www.sciencedirect.com/science/article/pii/S1051200423000842?casa_token=HQ9TdmpIhgAAAAAA:JSypHbk-YTStM6T1uXx4CtZM9jem1dEfWG72x0YD198RYGZKg2T0RPkx9ySOlE_OxN7pNBS2W4Jp) Digital Signal Processing 136 (2023): 103989.
+23. Zhang, Fang-Hao, and Zhi-Gang Shao. [ST-GRF: Spatiotemporal graph neural networks for rainfall forecasting.](https://www.sciencedirect.com/science/article/pii/S1051200423000842) Digital Signal Processing 136 (2023): 103989.
 
-24. Jin, Guangyin, et al. [Spatio-Temporal Graph Neural Networks for Predictive Learning in Urban Computing: A Survey.](https://ieeexplore.ieee.org/iel7/9148594/9158408/09158447.pdf?casa_token=7EtPBQFruZwAAAAA:WfsfDg1S8hz8Fi7Gz3Vo3fYeyn3fLQExm19te2r29jTZCCrGATNfj8wLMl1lB8NwgVk2faXCUWyx) arXiv preprint arXiv:2303.14483 (2023).
+24. Jin, Guangyin, et al. [Spatio-Temporal Graph Neural Networks for Predictive Learning in Urban Computing: A Survey.](https://ieeexplore.ieee.org/iel7/9148594/9158408/09158447.pdf) arXiv preprint arXiv:2303.14483 (2023).
 
 25. Chang, Buru, et al. [Learning graph-based geographical latent representation for point-of-interest recommendation.](https://doi.org/10.1145/3340531.3411905) Proceedings of the 29th ACM International conference on information & knowledge management. 2020.
 
 
-26. Tulczyjew, Lukasz, et al. [Graph neural networks extract high-resolution cultivated land maps from Sentinel-2 image series.](https://ieeexplore.ieee.org/iel7/8859/4357975/09803235.pdf?casa_token=A9ZTO7OusIAAAAAA:bsMXJ60tGmvxD24GKIqUUz4s4CnZvRXiiRNkW7yrIL4QRnNsPReWjpJuJJ6YAadNHBX3c6i6BlIk) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
+26. Tulczyjew, Lukasz, et al. [Graph neural networks extract high-resolution cultivated land maps from Sentinel-2 image series.](https://ieeexplore.ieee.org/iel7/8859/4357975/09803235.pdf) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
 
 27. Saha, Sudipan, Shan Zhao, and Xiao Xiang Zhu. [Multitarget domain adaptation for remote sensing classification using graph neural network.](https://ieeexplore.ieee.org/iel7/8859/9651998/09706461.pdf) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
 
 28. Yan, Jingjing, Shunping Ji, and Yao Wei. [A combination of convolutional and graph neural networks for regularized road surface extraction.](https://ieeexplore.ieee.org/iel7/36/9633014/09714410.pdf) IEEE transactions on geoscience and remote sensing 60 (2022): 1-13.
 
 29. Seastream, Grant, and Huseyin Denli. [Geoscientific reasoning via graph neural networks.](https://onepetro.org/SEGAM/proceedings-abstract/IMAGE22/1-IMAGE22/D011S085R002/512877) SEG/AAPG International Meeting for Applied Geoscience & Energy. OnePetro, 2022.
-
-30. Zhao, Wenzhi, et al. [Contextual-Aware Land Cover Classification with U-Shaped Object Graph Neural Network.](https://ieeexplore.ieee.org/iel7/8859/9651998/09781433.pdf?casa_token=xfXJQaVnpPkAAAAA:cJQmDdmVLbuF6IlqKSfkFL8pKVYbJwFz4BobP_3aSO4o0vx_7B1rsQXzmiLmWa8SfMy0-Tl1cbib) IEEE Geoscience and Remote Sensing Letters 19 (2022): 1-5.
 
 31. Klemmer, Konstantin, Nathan S. Safir, and Daniel B. Neill. [Positional encoder graph neural networks for geographic data.](https://proceedings.mlr.press/v206/klemmer23a/klemmer23a.pdf) International Conference on Artificial Intelligence and Statistics. PMLR, 2023.
 
